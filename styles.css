@@ -151,18 +151,19 @@ img,svg{display:block;max-width:100%}
   display:flex;
   flex-direction:column;
   justify-content:center;
-  gap:7px;
+  gap:5px;
 }
 .burger span{
   display:block;
   height:2px;
   width:100%;
   background:var(--ink);
-  transition:transform .35s var(--ease),background .2s ease;
+  transition:transform .35s var(--ease),opacity .2s ease,background .2s ease;
 }
 .burger:hover span{background:var(--accent)}
-.burger.open span:first-child{transform:translateY(4.5px) rotate(45deg)}
-.burger.open span:last-child{transform:translateY(-4.5px) rotate(-45deg)}
+.burger.open span:first-child{transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:last-child{transform:translateY(-7px) rotate(-45deg)}
 
 /* ------------------------------------------------------------
    Full-screen menu
@@ -789,6 +790,7 @@ img,svg{display:block;max-width:100%}
 }
 @media (max-width:900px){
   .hdr-nav{display:none}
+  .hdr-right{margin-left:auto}
   .hero{padding-top:calc(var(--hdr) + 6vh)}
   .hero-deco{right:24px;top:14%}
 }
