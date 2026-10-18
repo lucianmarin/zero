@@ -39,12 +39,16 @@ Type 3: Sugar and white flour in highly processed foods, fruit juices and even h
 
 ### Is your kid obese?
 
-Tell him not to snacking in between meals to keep insulin low from one meal to another. The body will self adjust to the new eating schedule and fat will be lost naturally. The process above is only for adults.
+Tell him not to snacking in between meals to keep insulin low from one meal to another. The body will self adjust to the new eating schedule and fat will be lost naturally. The process above is only for adults. Snacking alone will reduce 80% of type 3 foods that cause huge insulin spikes.
 
 ### What about muscle loss
 
-There's not such thing. Mitochondria in your muscles, organs and brain rebuilds the tissues using your body fat. Why it does that? So you can actually survive and live longer. Scary isn't it? To be an obese person, eating at longer intervals and getting healthier and healthier with every lost kg.
+There's not such thing. Mitochondria in your muscles, organs and brain rebuilds the tissues using your body fat. Why it does that? So you can actually survive and live longer. Scary isn't it? To be an obese person, eating at longer intervals and getting healthier and healthier with every lost kg. Nobody stops you from exercising and building muscle while you lose weight.
 
 ### What blood tests to monitor while losing weight
 
 I monitored this process with every 10kg of fat loss with these blood tests HOMA-IR and HOMA-B for pancreas health, ALT and AST for liver health, ApoB for heart health, eGFR for kidney health and hsCRP for overall body inflammation. These blood tests improved at every 10kg step. So why worry? Just get healthier and stay that way.
+
+### Disclaimer and donations
+
+By modifying your eating habits around insulin and adopting a healthy lifestyle you can reverse insulin resistance, obesity, prediabetes, type 2 diabetes, acanthosis nigricans. For other medical issues address your doctor. If you found the information here useful share this page on social media and [donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=FZ98QTQT792B6) since fasting is free.

@@ -115,6 +115,12 @@
             ["hsCRP", "whole-body inflammation"]
           ],
           foot: "Every 10 kg step → better results."
+        },
+        donate: {
+          note: "If you found the information here useful, share this page on social media.",
+          cta: "Donate via PayPal",
+          sub: "Since fasting is free",
+          href: "https://www.paypal.com/donate/?hosted_button_id=FZ98QTQT792B6"
         }
       },
       sections: [
@@ -168,7 +174,7 @@
         {
           id: "s9", n: "09", title: "What about muscle loss", punct: "?",
           lead: "",
-          body: "There's not such thing. Mitochondria in your muscles, organs and brain rebuilds the tissues using your body fat. Why it does that? So you can actually survive and live longer. Scary isn't it? To be an obese person, eating at longer intervals and getting healthier and healthier with every lost kg."
+          body: "There's not such thing. Mitochondria in your muscles, organs and brain rebuilds the tissues using your body fat. Why it does that? So you can actually survive and live longer. Scary isn't it? To be an obese person, eating at longer intervals and getting healthier and healthier with every lost kg. Nobody stops you from exercising and building muscle while you lose weight."
         },
         {
           id: "s10", n: "10", title: "What blood tests to monitor while losing weight", punct: ".",
@@ -176,6 +182,12 @@
           body: "I monitored this process with every 10kg of fat loss with these blood tests HOMA-IR and HOMA-B for pancreas health, ALT and AST for liver health, ApoB for heart health, eGFR for kidney health and hsCRP for overall body inflammation. These blood tests improved at every 10kg step. So why worry? Just get healthier and stay that way.",
           extra: "panel",
           dark: true
+        },
+        {
+          id: "s11", n: "11", title: "Disclaimer and donations", punct: ".",
+          lead: "",
+          body: "By modifying your eating habits around insulin and adopting a healthy lifestyle, you can reverse insulin resistance, obesity, prediabetes, type 2 diabetes and acanthosis nigricans. For other medical issues, address your doctor.",
+          extra: "donate"
         }
       ]
     }
@@ -286,6 +298,12 @@
             ["hsCRP", "inflamația generală a corpului"]
           ],
           foot: "La fiecare prag de 10 kg → rezultate mai bune."
+        },
+        donate: {
+          note: "Dacă informațiile de aici ți-au fost utile, distribuie această pagină pe rețelele de socializare.",
+          cta: "Donează prin PayPal",
+          sub: "Întrucât postul este gratuit",
+          href: "https://www.paypal.com/donate/?hosted_button_id=FZ98QTQT792B6"
         }
       },
       sections: [
@@ -339,7 +357,7 @@
         {
           id: "s9", n: "09", title: "Dar pierderea masei musculare", punct: "?",
           lead: "",
-          body: "Așa ceva nu există. Mitocondriile din mușchi, organe și creier reconstruiesc țesuturile folosind grăsimea corporală. De ce fac asta? Pentru ca tu să poți supraviețui și să trăiești mai mult. Înfricoșător, nu-i așa? Să fii o persoană obeză, să mănânci la intervale mai mari de timp și să devii tot mai sănătos cu fiecare kilogram pierdut."
+          body: "Așa ceva nu există. Mitocondriile din mușchi, organe și creier reconstruiesc țesuturile folosind grăsimea corporală. De ce fac asta? Pentru ca tu să poți supraviețui și să trăiești mai mult. Înfricoșător, nu-i așa? Să fii o persoană obeză, să mănânci la intervale mai mari de timp și să devii tot mai sănătos cu fiecare kilogram pierdut. Nimeni nu te împiedică să faci mișcare și să-ți dezvolți masa musculară în timp ce slăbești."
         },
         {
           id: "s10", n: "10", title: "Ce analize de sânge să monitorizezi în timpul scăderii în greutate", punct: ".",
@@ -347,6 +365,12 @@
           body: "Am monitorizat acest proces la fiecare 10 kg de grăsime pierdute, folosind următoarele analize de sânge: HOMA-IR și HOMA-B pentru sănătatea pancreasului, ALT și AST pentru sănătatea ficatului, ApoB pentru sănătatea inimii, eGFR pentru sănătatea rinichilor și hsCRP pentru inflamația generală a corpului. Rezultatele acestor analize s-au îmbunătățit la fiecare prag de 10 kg. Așadar, de ce să-ți faci griji? Pur și simplu devino mai sănătos și menține-te așa.",
           extra: "panel",
           dark: true
+        },
+        {
+          id: "s11", n: "11", title: "Declinarea responsabilității și donații", punct: ".",
+          lead: "",
+          body: "Prin ajustarea obiceiurilor alimentare în funcție de insulină și adoptarea unui stil de viață sănătos, poți inversa rezistența la insulină, obezitatea, prediabetul, diabetul de tip 2 și acanthosis nigricans. Pentru alte probleme medicale, adresează-te medicului tău.",
+          extra: "donate"
         }
       ]
     }
@@ -530,6 +554,20 @@
               )
               .join("") +
             '<p class="tests-foot">' + x.panel.foot + "</p>" +
+          "</div>"
+        );
+      case "donate":
+        return (
+          '<div class="donate rv">' +
+            '<p class="donate-note">' + x.donate.note + "</p>" +
+            '<a class="donate-btn" href="' + x.donate.href + '" target="_blank" rel="noopener noreferrer">' +
+              '<span class="donate-dot" aria-hidden="true"></span>' +
+              '<span class="donate-copy">' +
+                '<span class="donate-label">' + x.donate.cta + "</span>" +
+                '<span class="donate-sub">' + x.donate.sub + "</span>" +
+              "</span>" +
+              '<span class="donate-arr" aria-hidden="true">↗</span>' +
+            "</a>" +
           "</div>"
         );
       default:

@@ -43,8 +43,12 @@ Spune-i să nu mai mănânce gustări între mese, pentru a menține un nivel sc
 
 ### Dar pierderea masei musculare?
 
-Așa ceva nu există. Mitocondriile din mușchi, organe și creier reconstruiesc țesuturile folosind grăsimea corporală. De ce fac asta? Pentru ca tu să poți supraviețui și să trăiești mai mult. Înfricoșător, nu-i așa? Să fii o persoană obeză, să mănânci la intervale mai mari de timp și să devii tot mai sănătos cu fiecare kilogram pierdut.
+Așa ceva nu există. Mitocondriile din mușchi, organe și creier reconstruiesc țesuturile folosind grăsimea corporală. De ce fac asta? Pentru ca tu să poți supraviețui și să trăiești mai mult. Înfricoșător, nu-i așa? Să fii o persoană obeză, să mănânci la intervale mai mari de timp și să devii tot mai sănătos cu fiecare kilogram pierdut. Nimeni nu te împiedică să faci mișcare și să-ți dezvolți masa musculară în timp ce slăbești.
 
 ### Ce analize de sânge să monitorizezi în timpul scăderii în greutate
 
 Am monitorizat acest proces la fiecare 10 kg de grăsime pierdute, folosind următoarele analize de sânge: HOMA-IR și HOMA-B pentru sănătatea pancreasului, ALT și AST pentru sănătatea ficatului, ApoB pentru sănătatea inimii, eGFR pentru sănătatea rinichilor și hsCRP pentru inflamația generală a corpului. Rezultatele acestor analize s-au îmbunătățit la fiecare prag de 10 kg. Așadar, de ce să-ți faci griji? Pur și simplu devino mai sănătos și menține-te așa.
+
+### Declinarea responsabilității și donații
+
+Prin ajustarea obiceiurilor alimentare în funcție de insulină și adoptarea unui stil de viață sănătos, poți inversa rezistența la insulină, obezitatea, prediabetul, diabetul de tip 2 și acanthosis nigricans. Pentru alte probleme medicale, adresează-te medicului tău. Dacă informațiile de aici ți-au fost utile, distribuie această pagină pe rețelele de socializare și [donează prin PayPal](https://www.paypal.com/donate/?hosted_button_id=FZ98QTQT792B6) – întrucât postul este gratuit.
