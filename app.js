@@ -81,6 +81,30 @@
           cap: "Day 1 — every calorie of the week in one go. Days 2–7 — fasting. The week still ends below the starting weight.",
           aria: "Weight relative to the starting weight over seven days: above it on days 1 to 3, back at it on day 4, below it on days 5 to 7."
         },
+        spikes: {
+          head: "Diet guide",
+          sub: "3 types of foods — 3 sizes of insulin spikes",
+          rows: [
+            {
+              title: "Type 1 — Vegetables",
+              sub: "Cooked or uncooked, in any combination with salt, spices, brine and vinegar. You can even enjoy them when you are hungry, during the fasting window.",
+              tag: "Low"
+            },
+            {
+              title: "Type 2 — Fiber, protein, fat",
+              sub: "Foods containing fiber, protein and healthy fats, combined in delicious meals. These are the foods that keep you healthy, don't cause weight gain and prevent diabetes.",
+              tag: "Medium",
+              tagClass: "tag--hold"
+            },
+            {
+              title: "Type 3 — Sugar & white flour",
+              sub: "Sugar and white flour in highly processed foods, fruit juices and even homemade jams, if eaten in large portions. You don't need to avoid them completely — enjoy them on special occasions: holidays, birthdays, special events. Or set a rhythm, like your favorite ice cream once every two weeks.",
+              tag: "Huge",
+              tagClass: "tag--loss"
+            }
+          ],
+          cap: "Type 1 barely lifts insulin. Type 2 lifts it gently. Type 3 spikes it hard. What you eat decides how high insulin goes — when you eat decides the rest."
+        },
         panel: {
           cap: "Monitor — every 10 kg",
           rows: [
@@ -131,17 +155,23 @@
           extra2: "test2"
         },
         {
-          id: "s7", n: "07", title: "Is your kid obese", punct: "?",
+          id: "s7", n: "07", title: "Optimize insulin spikes with diet", punct: ".",
           lead: "",
-          body: "Tell him not to snacking in between meals to keep insulin low from one meal to another. The body will self adjust to the new eating schedule and fat will be lost naturally. The process above is only for adults."
+          body: "No food is bad as long as you know when to eat it. Time is more important than diet alone. There are 3 types of foods that cause low insulin spikes, medium insulin spikes and huge insulin spikes:",
+          extra: "spikes"
         },
         {
-          id: "s8", n: "08", title: "What about muscle loss", punct: "?",
+          id: "s8", n: "08", title: "Is your kid obese", punct: "?",
+          lead: "",
+          body: "Tell him not to snack in between meals to keep insulin low from one meal to another. The body will self-adjust to the new eating schedule, and fat will be lost naturally. The process above is only for adults. Just eliminating snacks will reduce the consumption of “type 3” foods — which cause sudden, massive insulin spikes — by 80%."
+        },
+        {
+          id: "s9", n: "09", title: "What about muscle loss", punct: "?",
           lead: "",
           body: "There's not such thing. Mitochondria in your muscles, organs and brain rebuilds the tissues using your body fat. Why it does that? So you can actually survive and live longer. Scary isn't it? To be an obese person, eating at longer intervals and getting healthier and healthier with every lost kg."
         },
         {
-          id: "s9", n: "09", title: "What blood tests to monitor while losing weight", punct: ".",
+          id: "s10", n: "10", title: "What blood tests to monitor while losing weight", punct: ".",
           lead: "",
           body: "I monitored this process with every 10kg of fat loss with these blood tests HOMA-IR and HOMA-B for pancreas health, ALT and AST for liver health, ApoB for heart health, eGFR for kidney health and hsCRP for overall body inflammation. These blood tests improved at every 10kg step. So why worry? Just get healthier and stay that way.",
           extra: "panel",
@@ -222,6 +252,30 @@
           cap: "Ziua 1 — toate caloriile săptămânii dintr-o singură masă. Zilele 2–7 — post. Săptămâna se încheie sub greutatea de start.",
           aria: "Greutatea față de greutatea de start pe șapte zile: peste start în zilele 1–3, la nivelul de start în ziua 4, sub start în zilele 5–7."
         },
+        spikes: {
+          head: "Ghidul dietei",
+          sub: "3 categorii de alimente — 3 creșteri ale insulinei",
+          rows: [
+            {
+              title: "Categoria 1 — Legumele",
+              sub: "Gătite sau crude, în orice combinație, cu sare, condimente, saramură sau oțet. Le poți consuma chiar și atunci când îți este foame, în timpul ferestrei de post.",
+              tag: "Ușoară"
+            },
+            {
+              title: "Categoria 2 — Fibre, proteine, grăsimi",
+              sub: "Alimente care conțin fibre, proteine și grăsimi sănătoase, combinate în mese delicioase. Acestea sunt alimentele care îți mențin sănătatea, nu duc la creșterea în greutate și previn diabetul.",
+              tag: "Moderată",
+              tagClass: "tag--hold"
+            },
+            {
+              title: "Categoria 3 — Zahăr și făină albă",
+              sub: "Zahărul și făina albă din alimentele ultraprocesate, sucurile de fructe și chiar dulcețurile de casă (dacă sunt consumate în porții mari). Nu este nevoie să le elimini complet; bucură-te de ele cu ocazii speciale – sărbători, zile de naștere, evenimente deosebite etc. – sau stabilește-ți un ritm, de exemplu, savurând înghețata preferată o dată la două săptămâni.",
+              tag: "Foarte mare",
+              tagClass: "tag--loss"
+            }
+          ],
+          cap: "Categoria 1 ridică insulina foarte puțin. Categoria 2 o ridică moderat. Categoria 3 o aruncă brusc în sus. Ce mănânci decide cât de sus urcă insulina — când mănânci decide restul."
+        },
         panel: {
           cap: "Monitorizare — la fiecare 10 kg",
           rows: [
@@ -272,17 +326,23 @@
           extra2: "test2"
         },
         {
-          id: "s7", n: "07", title: "Copilul tău este obez", punct: "?",
+          id: "s7", n: "07", title: "Optimizează creșterile nivelului de insulină prin alimentație", punct: ".",
           lead: "",
-          body: "Spune-i să nu mai mănânce gustări între mese, pentru a menține nivelul insulinei scăzut de la o masă la alta. Corpul se va adapta singur la noul program alimentar, iar grăsimea va fi eliminată în mod natural. Procesul descris mai sus este valabil doar pentru adulți."
+          body: "Niciun aliment nu este „rău”, atâta timp cât știi când să-l consumi. Momentul consumului este mai important decât dieta în sine. Există trei categorii de alimente, în funcție de impactul lor asupra nivelului de insulină: cele care provoacă creșteri ușoare, moderate sau foarte mari.",
+          extra: "spikes"
         },
         {
-          id: "s8", n: "08", title: "Dar pierderea masei musculare", punct: "?",
+          id: "s8", n: "08", title: "Copilul tău este obez", punct: "?",
+          lead: "",
+          body: "Spune-i să nu mai mănânce gustări între mese, pentru a menține un nivel scăzut al insulinei de la o masă la alta. Corpul se va adapta de la sine la noul program de masă, iar pierderea în greutate (din grăsimi) va avea loc în mod natural. Procesul descris mai sus este destinat exclusiv adulților. Doar eliminarea gustărilor va reduce cu 80% consumul de alimente de „tip 3”, care provoacă creșteri bruște și masive ale nivelului de insulină."
+        },
+        {
+          id: "s9", n: "09", title: "Dar pierderea masei musculare", punct: "?",
           lead: "",
           body: "Așa ceva nu există. Mitocondriile din mușchi, organe și creier reconstruiesc țesuturile folosind grăsimea corporală. De ce fac asta? Pentru ca tu să poți supraviețui și să trăiești mai mult. Înfricoșător, nu-i așa? Să fii o persoană obeză, să mănânci la intervale mai mari de timp și să devii tot mai sănătos cu fiecare kilogram pierdut."
         },
         {
-          id: "s9", n: "09", title: "Ce analize de sânge să monitorizezi în timpul scăderii în greutate", punct: ".",
+          id: "s10", n: "10", title: "Ce analize de sânge să monitorizezi în timpul scăderii în greutate", punct: ".",
           lead: "",
           body: "Am monitorizat acest proces la fiecare 10 kg de grăsime pierdute, folosind următoarele analize de sânge: HOMA-IR și HOMA-B pentru sănătatea pancreasului, ALT și AST pentru sănătatea ficatului, ApoB pentru sănătatea inimii, eGFR pentru sănătatea rinichilor și hsCRP pentru inflamația generală a corpului. Rezultatele acestor analize s-au îmbunătățit la fiecare prag de 10 kg. Așadar, de ce să-ți faci griji? Pur și simplu devino mai sănătos și menține-te așa.",
           extra: "panel",
@@ -326,6 +386,24 @@
       }
     }
     return out;
+  };
+
+  /* Insulin response curve: difference of two exponentials, normalised
+     so the peak is exactly `amp` px above the baseline. */
+  const spikePath = (amp, rise, decay) => {
+    const base = 58, meal = 10, width = 221;
+    const ys = [];
+    let peak = 0;
+    for (let x = 0; x <= width; x += 2) {
+      const t = x - meal;
+      let v = t > 0 ? Math.exp(-t / decay) - Math.exp(-t / rise) : 0;
+      if (v < 0) v = 0;
+      ys.push(v);
+      if (v > peak) peak = v;
+    }
+    return ys
+      .map((v, i) => (i ? "L" : "M") + i * 2 + "," + (base - (v / peak) * amp).toFixed(1))
+      .join("");
   };
 
   function extrasHTML(id, x) {
@@ -408,6 +486,33 @@
               "</div>" +
             "</div>" +
             '<p class="lab-cap">' + x.test2.cap + "</p>" +
+          "</div>"
+        );
+      }
+      case "spikes": {
+        const shapes = [[14, 6, 16], [30, 9, 30], [52, 10, 60]];
+        return (
+          '<div class="lab rv">' +
+            '<div class="lab-head"><b>' + x.spikes.head + "</b><span>" + x.spikes.sub + "</span></div>" +
+            x.spikes.rows
+              .map((r, i) => {
+                const [amp, rise, decay] = shapes[i];
+                return (
+                  '<div class="run">' +
+                    '<div class="run-info">' +
+                      "<h5>" + r.title + "</h5>" +
+                      '<p class="run-sub">' + r.sub + "</p>" +
+                    "</div>" +
+                    '<div class="run-out"><span class="tag ' + (r.tagClass || "") + '">' + r.tag + "</span></div>" +
+                    '<svg class="spike' + (i === 2 ? " spike--hot" : "") + '" viewBox="0 0 221 64" aria-hidden="true" style="--d:' + i * 160 + 'ms">' +
+                      '<line class="spine" x1="0" y1="58" x2="221" y2="58"></line>' +
+                      '<path class="curve" d="' + spikePath(amp, rise, decay) + '"></path>' +
+                    "</svg>" +
+                  "</div>"
+                );
+              })
+              .join("") +
+            '<p class="lab-cap">' + x.spikes.cap + "</p>" +
           "</div>"
         );
       }

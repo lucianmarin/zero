@@ -27,9 +27,19 @@ Putem pune teoria la încercare. Să presupunem că o persoană obeză are nevoi
 
 Iată un al doilea test, pe care chiar și inteligența artificială îl înțelege: oferă cuiva, în prima zi a săptămânii, toate caloriile de care are nevoie pentru întreaga săptămână, iar apoi persoana respectivă ține post în următoarele 6 zile. În primele 2 zile, va lua în greutate, deoarece nivelul insulinei este ridicat, iar glucoza trebuie împinsă în interiorul celulelor. În următoarele 2 zile, va pierde greutatea acumulată în primele 2 zile. În următoarele 2 zile, va pierde și mai multă greutate – ajungând sub greutatea inițială – datorită scăderii pronunțate a nivelului de insulină. Așadar, a existat, de fapt, un deficit caloric de la bun început?
 
+### Optimizează creșterile nivelului de insulină prin alimentație
+
+Niciun aliment nu este „rău”, atâta timp cât știi când să-l consumi. Momentul consumului este mai important decât dieta în sine. Există trei categorii de alimente, în funcție de impactul lor asupra nivelului de insulină: cele care provoacă creșteri ușoare, moderate sau foarte mari.
+
+Categoria 1: Legumele – gătite sau crude, în orice combinație, cu sare, condimente, saramură sau oțet. Le poți consuma chiar și atunci când îți este foame în timpul ferestrei de post.
+
+Categoria 2: Alimente care conțin fibre, proteine ​​și grăsimi sănătoase, combinate în mese delicioase. Acestea sunt alimentele care îți mențin sănătatea, nu duc la creșterea în greutate și previn diabetul.
+
+Categoria 3: Zahărul și făina albă din alimentele ultraprocesate, sucurile de fructe și chiar dulcețurile de casă (dacă sunt consumate în porții mari). Nu este nevoie să le elimini complet; bucură-te de ele cu ocazii speciale – sărbători, zile de naștere, evenimente deosebite etc. – sau stabilește-ți un ritm, de exemplu, savurând înghețata preferată o dată la două săptămâni.
+
 ### Copilul tău este obez?
 
-Spune-i să nu mai mănânce gustări între mese, pentru a menține nivelul insulinei scăzut de la o masă la alta. Corpul se va adapta singur la noul program alimentar, iar grăsimea va fi eliminată în mod natural. Procesul descris mai sus este valabil doar pentru adulți.
+Spune-i să nu mai mănânce gustări între mese, pentru a menține un nivel scăzut al insulinei de la o masă la alta. Corpul se va adapta de la sine la noul program de masă, iar pierderea în greutate (din grăsimi) va avea loc în mod natural. Procesul descris mai sus este destinat exclusiv adulților. Doar eliminarea gustărilor va reduce cu 80% consumul de alimente de „tip 3”, care provoacă creșteri bruște și masive ale nivelului de insulină.
 
 ### Dar pierderea masei musculare?
 

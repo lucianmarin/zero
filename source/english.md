@@ -27,6 +27,16 @@ We can put the theory to the test. Let's say an obese person need to eat 1600 ca
 
 The second test that even AI gets it. Feed someone all the calories they need for a week in the first day of the week then fast for the next 6 days. In the first 2 days they will gain weight because insulin is high and the glucose needs to be pushed into cells. The next 2 days they will lose the weight gained in the first 2 days. The following next 2 days they will lose more weight than starting weight because of how low the insulin gets. So was there even a caloric deficit to begin with?
 
+### Optimize insulin spikes with diet
+
+No food is bad as long as you know when to eat it. Time is more important than diet alone. There are 3 types of foods that cause low insulin spikes, medium insulin spikes and huge insulin spikes:
+
+Type 1: Vegetables — cooked or uncooked, in any combination with salt, spices, brine and vinegar. You can even enjoy them when you are hungry on your fasting window.
+
+Type 2: Foods containing fiber, protein and healthy fats combined in delicious meals. These are the foods that keep you healthy, don't cause weight gain and prevent diabetes.
+
+Type 3: Sugar and white flour in highly processed foods, fruit juices and even homemade jams if eaten in large portions. You don't need to avoid them completely, just enjoy them on special occasions: holidays, birthdays, special events, etc. or set you rithm for them like once every two weeks enjoy your favorite ice cream.
+
 ### Is your kid obese?
 
 Tell him not to snacking in between meals to keep insulin low from one meal to another. The body will self adjust to the new eating schedule and fat will be lost naturally. The process above is only for adults.

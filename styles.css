@@ -709,6 +709,26 @@ img,svg{display:block;max-width:100%}
 }
 .phase + .phase{border-left:1px solid var(--line)}
 .phase--below{color:var(--accent)}
+
+/* Diet — three spike guides */
+.spike{
+  display:block;
+  width:221px;
+  height:auto;
+}
+.spike .spine{stroke:var(--line-strong);stroke-width:1}
+.spike .curve{
+  fill:none;
+  stroke:var(--ink);
+  stroke-width:1.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  transition:stroke-dashoffset 1.1s var(--ease) var(--d,0s);
+}
+.spike--hot .curve{stroke:var(--accent)}
+.lab.in .spike .curve{stroke-dashoffset:0}
 .sec-body .lab-cap{
   padding:18px clamp(20px,2.8vw,32px) clamp(20px,2.8vw,30px);
   font-size:.92rem;
@@ -919,6 +939,7 @@ img,svg{display:block;max-width:100%}
 @media (max-width:420px){
   .dots{grid-template-columns:repeat(16,9px);gap:2px}
   .d{width:9px;height:9px}
+  .spike{width:174px}
   .brand{font-size:1.25rem}
   .lang-btn{padding:6px 10px}
 }
@@ -931,4 +952,6 @@ img,svg{display:block;max-width:100%}
 @media (prefers-reduced-motion:reduce){
   .wbar,
   .lab.in .wbar{transform:none;transition:none}
+  .spike .curve,
+  .lab.in .spike .curve{stroke-dashoffset:0;transition:none}
 }
