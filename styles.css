@@ -555,12 +555,13 @@ img,svg{display:block;max-width:100%}
   max-width:26ch;
 }
 
-/* Lab — the biscuit experiment */
+/* Lab — the test figures */
 .lab{
   margin-top:clamp(30px,4.5vh,48px);
   border:1px solid var(--line);
   background:var(--paper-2);
 }
+.sec-body .lab + p{margin-top:clamp(28px,4vh,40px)}
 .lab-head{
   display:flex;
   flex-wrap:wrap;
@@ -575,28 +576,30 @@ img,svg{display:block;max-width:100%}
   color:var(--body);
 }
 .lab-head b{color:var(--accent);font-weight:700}
-.lab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-.lab-mode{padding:clamp(22px,3vw,34px)}
-.lab-mode + .lab-mode{border-left:1px solid var(--line)}
-.lab-mode h5{
-  font-size:1.08rem;
+
+/* Test 01 — same calories, three schedules */
+.run{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto auto;
+  align-items:center;
+  gap:clamp(18px,3.2vw,40px);
+  padding:clamp(20px,2.8vw,30px) clamp(20px,2.8vw,32px);
+}
+.run + .run{border-top:1px solid var(--line)}
+.run-info h5{
+  font-size:1.05rem;
   font-weight:700;
   letter-spacing:-.01em;
 }
-.tag{
-  display:inline-block;
-  margin-top:14px;
-  padding:5px 11px;
-  font-size:.7rem;
-  font-weight:700;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  background:var(--ink);
-  color:var(--paper);
+.sec-body .run-sub{
+  margin-top:7px;
+  font-size:.84rem;
+  line-height:1.6;
+  color:var(--body);
+  max-width:42ch;
 }
-.tag--loss{background:var(--accent);color:#fff}
+.run-out{justify-self:end}
 .dots{
-  margin-top:18px;
   display:grid;
   grid-template-columns:repeat(16,11px);
   gap:3px;
@@ -607,12 +610,111 @@ img,svg{display:block;max-width:100%}
   border:1px solid var(--line-strong);
 }
 .d.on{background:var(--accent);border-color:var(--accent)}
-.lab-cap{
-  margin-top:18px;
+.tag{
+  display:inline-block;
+  padding:5px 11px;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  background:var(--ink);
+  color:var(--paper);
+}
+.tag--hold{background:none;border:1px solid var(--line-strong);color:var(--body)}
+.tag--loss{background:var(--accent);color:#fff}
+
+/* Test 02 — feast day, then six fasting days */
+.chart{padding:clamp(24px,3.4vw,38px) clamp(20px,2.8vw,32px) 0}
+.zone{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  gap:clamp(10px,2vw,22px);
+  height:clamp(86px,12vw,120px);
+}
+.zone--up{align-items:flex-end}
+.zone--down{align-items:flex-start}
+.wcol{
+  display:flex;
+  justify-content:center;
+  height:100%;
+}
+.zone--up .wcol{align-items:flex-end}
+.zone--down .wcol{align-items:flex-start}
+.wbar{
+  width:clamp(16px,2.4vw,26px);
+  height:var(--h,0);
+  background:var(--ink);
+  transform:scaleY(0);
+  transform-origin:bottom;
+  transition:transform .85s var(--ease) var(--d,0s);
+}
+.zone--down .wbar{background:var(--accent);transform-origin:top}
+.lab.in .wbar{transform:scaleY(1)}
+.wbar--zero{
+  height:3px;
+  opacity:.55;
+  transform:none;
+  transition:none;
+}
+.base{
+  position:relative;
+  height:1px;
+  background:var(--line-strong);
+}
+.base-lab{
+  position:absolute;
+  left:0;
+  top:9px;
+  font-size:.66rem;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--body);
+}
+.wdays{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  gap:clamp(10px,2vw,22px);
+  margin-top:16px;
+}
+.wday{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+.wday b{font-size:.8rem;font-weight:700;color:var(--body)}
+.wmark{
+  width:9px;height:9px;
+  border-radius:50%;
+  border:1px solid var(--line-strong);
+}
+.wmark--eat{background:var(--accent);border-color:var(--accent);border-radius:0}
+.phases{
+  display:grid;
+  grid-template-columns:2fr 2fr 3fr;
+  margin-top:20px;
+  border-top:1px solid var(--line);
+}
+.phase{
+  padding:12px 8px 0;
+  font-size:.66rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  line-height:1.7;
+  text-align:center;
+  color:var(--body);
+}
+.phase + .phase{border-left:1px solid var(--line)}
+.phase--below{color:var(--accent)}
+.sec-body .lab-cap{
+  padding:18px clamp(20px,2.8vw,32px) clamp(20px,2.8vw,30px);
   font-size:.92rem;
   line-height:1.65;
   color:var(--body);
-  max-width:36ch;
+  max-width:72ch;
 }
 
 /* Dark panel — monitored tests */
@@ -804,8 +906,12 @@ img,svg{display:block;max-width:100%}
     padding:18px 18px 14px 0;
   }
   .options{grid-template-columns:minmax(0,1fr)}
-  .lab-grid{grid-template-columns:minmax(0,1fr)}
-  .lab-mode + .lab-mode{border-left:0;border-top:1px solid var(--line)}
+  .run{
+    grid-template-columns:minmax(0,1fr) auto;
+    row-gap:16px;
+    column-gap:16px;
+  }
+  .run-info{grid-column:1/-1}
   .test{grid-template-columns:52px minmax(0,1fr);row-gap:6px}
   .test-desc{grid-column:2;text-align:left}
   .menu-foot{flex-direction:column;gap:8px}
@@ -821,4 +927,8 @@ img,svg{display:block;max-width:100%}
   .hstat{padding:14px 0 16px}
   .hstat span{max-width:none}
   .hero-deco{right:20px;top:11%}
+}
+@media (prefers-reduced-motion:reduce){
+  .wbar,
+  .lab.in .wbar{transform:none;transition:none}
 }

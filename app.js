@@ -63,14 +63,23 @@
           { label: "Option A", text: "Two meals a day. Zero calories in between." },
           { label: "Option B", text: "Modified three meals — one big meal, two snacks." }
         ],
-        lab: {
-          figTitle: "The biscuit experiment",
-          aTitle: "One biscuit every hour",
-          aTag: "Gain",
-          aDesc: "Insulin stays elevated until the next hour. The week ends with weight gain — less for the lean, more for the obese.",
-          bTitle: "All 16 biscuits, once a day",
-          bTag: "Loss",
-          bDesc: "One spike per day. Day two burns yesterday's excess — the remaining five days melt real fat."
+        test1: {
+          head: "Test 01",
+          sub: "1600 kcal a day — half of maintenance",
+          rows: [
+            { title: "100 kcal every hour", sub: "16 × 100 kcal a day — insulin never drops", tag: "Gain" },
+            { title: "800 kcal, two meals", sub: "2 × 800 kcal a day — insulin spikes twice", tag: "Maintain", tagClass: "tag--hold" },
+            { title: "1600 kcal, one meal", sub: "1 × 1600 kcal a day — one spike, then a long fall", tag: "Loss", tagClass: "tag--loss" }
+          ],
+          cap: "Seven days × 16 waking hours — the same calories every day: grazing gains, two meals hold, one meal loses."
+        },
+        test2: {
+          head: "Test 02",
+          sub: "All the week's calories on day one — then 6 days of fasting",
+          base: "start weight",
+          phases: ["Days 1–2 · gain", "Days 3–4 · burn the gain", "Days 5–7 · below start"],
+          cap: "Day 1 — every calorie of the week in one go. Days 2–7 — fasting. The week still ends below the starting weight.",
+          aria: "Weight relative to the starting weight over seven days: above it on days 1 to 3, back at it on day 4, below it on days 5 to 7."
         },
         panel: {
           cap: "Monitor — every 10 kg",
@@ -116,9 +125,10 @@
         {
           id: "s6", n: "06", title: "How to test the insulin biology", punct: ".",
           lead: "",
-          body: "We can put the theory to the test. We need 16 × 7 = 112 biscuits. Suppose we eat one biscuit every hour, plus 8 hours of sleep. Over the course of a week, we would consume the total number of calories needed for just one day. Would we lose or gain weight by the end of the week? Each biscuit would keep insulin levels elevated until the next hour or the next biscuit; we wouldn't lose any weight at all—in fact, we would gain weight depending on our existing body fat (which correlates with fasting insulin levels): those with less body fat would gain less, while those with more will gain more.",
-          body2: "If we ate all 16 biscuits in a single sitting once a day, we would lose weight. If we ate all 112 biscuits during the first hour of the first day of the week, we would gain weight; on the second day, we would burn off the excess fat we had just accumulated, and during the remaining five days, we would lose a significant amount of weight.",
-          extra: "lab"
+          body: "We can put the theory to the test. Let's say an obese person needs to eat 1600 calories a day — a caloric deficit — compared with the 3200 calories a day needed for maintenance. Suppose they eat 100 calories every hour, plus 8 hours of sleep: over the course of a week, that person would consume half the number of calories needed. Would they lose or gain weight by the end of the week? Each 100 calories would keep insulin elevated until the next hour; they wouldn't lose any weight at all — in fact, they would gain weight depending on their existing body fat (which correlates with fasting insulin levels): those with less body fat would gain less, while those with more will gain more. If they eat all 1600 calories in a single sitting once a day, they would lose weight. If they split it into two meals of 800 calories, they will just maintain their current weight.",
+          body2: "The second test — even AI gets it. Feed someone all the calories they need for a week on the first day of the week, then fast for the next 6 days. In the first 2 days they will gain weight because insulin is high and the glucose needs to be pushed into cells. The next 2 days they will lose the weight gained in the first 2 days. The following 2 days they will lose more weight than the starting weight because of how low the insulin gets. So was there even a caloric deficit to begin with?",
+          extra: "test1",
+          extra2: "test2"
         },
         {
           id: "s7", n: "07", title: "Is your kid obese", punct: "?",
@@ -194,14 +204,23 @@
           { label: "Varianta A", text: "Două mese pe zi. Nicio calorie între ele." },
           { label: "Varianta B", text: "Trei mese modificate — o masă copioasă și două gustări." }
         ],
-        lab: {
-          figTitle: "Experimentul cu biscuiții",
-          aTitle: "Câte un biscuit, în fiecare oră",
-          aTag: "Creștere",
-          aDesc: "Insulina rămâne ridicată până la ora următoare. Săptămâna se încheie cu kilograme în plus — mai puțin pentru cei slabi, mai mult pentru cei obezi.",
-          bTitle: "Toți cei 16 biscuiți, o dată pe zi",
-          bTag: "Slăbire",
-          bDesc: "O singură creștere pe zi. În ziua a doua se arde excesul acumulat — în restul de cinci zile grăsimea se topește."
+        test1: {
+          head: "Testul 01",
+          sub: "1600 kcal pe zi — jumătate din necesar",
+          rows: [
+            { title: "100 kcal în fiecare oră", sub: "16 × 100 kcal pe zi — insulina nu scade deloc", tag: "Creștere" },
+            { title: "800 kcal în două mese", sub: "2 × 800 kcal pe zi — insulina urcă de două ori", tag: "Menținere", tagClass: "tag--hold" },
+            { title: "1600 kcal într-o singură masă", sub: "1 × 1600 kcal pe zi — o singură creștere, apoi o scădere lungă", tag: "Slăbire", tagClass: "tag--loss" }
+          ],
+          cap: "Șapte zile × 16 ore de veghe — aceleași calorii în fiecare zi: din oră în oră — creștere, două mese — menținere, o singură masă — slăbire."
+        },
+        test2: {
+          head: "Testul 02",
+          sub: "Toate caloriile săptămânii în prima zi — apoi 6 zile de post",
+          base: "greutatea de start",
+          phases: ["Zilele 1–2 · creștere", "Zilele 3–4 · se ard", "Zilele 5–7 · sub start"],
+          cap: "Ziua 1 — toate caloriile săptămânii dintr-o singură masă. Zilele 2–7 — post. Săptămâna se încheie sub greutatea de start.",
+          aria: "Greutatea față de greutatea de start pe șapte zile: peste start în zilele 1–3, la nivelul de start în ziua 4, sub start în zilele 5–7."
         },
         panel: {
           cap: "Monitorizare — la fiecare 10 kg",
@@ -247,9 +266,10 @@
         {
           id: "s6", n: "06", title: "Cum să testezi biologia insulinei", punct: ".",
           lead: "",
-          body: "Putem pune această teorie la încercare. Avem nevoie de 16 × 7 = 112 biscuiți. Să presupunem că mâncăm câte un biscuit în fiecare oră, luând în calcul și 8 ore de somn. Pe parcursul unei săptămâni, am consuma numărul total de calorii necesar pentru o singură zi. Am slăbi sau ne-am îngrășa până la sfârșitul săptămânii? Fiecare biscuit ar menține nivelul insulinei ridicat până la ora următoare sau până la următorul biscuit; nu am slăbi deloc – ba chiar ne-am îngrășa, în funcție de cantitatea de grăsime corporală existentă (care corelează cu nivelul insulinei în stare de repaus alimentar): cei cu mai puțină grăsime corporală s-ar îngrășa mai puțin, în timp ce aceia cu mai multă s-ar îngrășa mai mult.",
-          body2: "Dacă am mânca toți cei 16 biscuiți o singură dată pe zi, într-o singură repriză, am slăbi. Dacă am mânca toți cei 112 biscuiți în prima oră a primei zile din săptămână, ne-am îngrășa; în a doua zi, am arde grăsimea în exces pe care tocmai am acumulat-o, iar în restul de cinci zile am pierde o cantitate semnificativă de greutate.",
-          extra: "lab"
+          body: "Putem pune teoria la încercare. Să presupunem că o persoană obeză are nevoie de un aport de 1600 de calorii pe zi (reprezentând un deficit caloric), față de cele 3200 de calorii necesare pentru menținerea greutății. Să presupunem că această persoană consumă 100 de calorii în fiecare oră, având în plus 8 ore de somn. Pe parcursul unei săptămâni, o persoană obeză ar consuma jumătate din numărul de calorii necesare. Ar slăbi sau s-ar îngrășa această persoană până la sfârșitul săptămânii? Fiecare porție de 100 de calorii ar menține nivelul insulinei ridicat până la ora următoare; persoana respectivă nu ar slăbi deloc – ba chiar s-ar îngrășa, în funcție de cantitatea de grăsime corporală existentă (care corelează cu nivelul insulinei în stare de repaus alimentar): cei cu mai puțină grăsime corporală s-ar îngrășa mai puțin, în timp ce aceia cu mai multă grăsime s-ar îngrășa mai mult. Dacă ar consuma toate cele 1600 de calorii într-o singură masă, o dată pe zi, ar slăbi. Dacă ar împărți cantitatea în două mese a câte 800 de calorii, greutatea s-ar menține la nivelul actual.",
+          body2: "Iată un al doilea test, pe care chiar și inteligența artificială îl înțelege: oferă cuiva, în prima zi a săptămânii, toate caloriile de care are nevoie pentru întreaga săptămână, iar apoi persoana respectivă ține post în următoarele 6 zile. În primele 2 zile, va lua în greutate, deoarece nivelul insulinei este ridicat, iar glucoza trebuie împinsă în interiorul celulelor. În următoarele 2 zile, va pierde greutatea acumulată în primele 2 zile. În următoarele 2 zile, va pierde și mai multă greutate – ajungând sub greutatea inițială – datorită scăderii pronunțate a nivelului de insulină. Așadar, a existat, de fapt, un deficit caloric de la bun început?",
+          extra: "test1",
+          extra2: "test2"
         },
         {
           id: "s7", n: "07", title: "Copilul tău este obez", punct: "?",
@@ -298,10 +318,12 @@
   /* ----------------------------------------------------------
      Template builders
      ---------------------------------------------------------- */
-  const dotsHTML = (filled, total = 112) => {
+  const weekDotsHTML = cols => {
     let out = "";
-    for (let i = 0; i < total; i++) {
-      out += '<span class="d' + (i < filled ? " on" : "") + '"></span>';
+    for (let d = 0; d < 7; d++) {
+      for (let h = 0; h < 16; h++) {
+        out += '<span class="d' + (cols.includes(h) ? " on" : "") + '"></span>';
+      }
     }
     return out;
   };
@@ -329,26 +351,66 @@
             .join("") +
           "</div>"
         );
-      case "lab":
+      case "test1": {
+        const cols = [Array.from({ length: 16 }, (_, i) => i), [2, 11], [7]];
         return (
           '<div class="lab rv">' +
-            '<div class="lab-head"><b>' + x.lab.figTitle + "</b><span>16 × 7 = 112</span></div>" +
-            '<div class="lab-grid">' +
-              '<div class="lab-mode">' +
-                "<h5>" + x.lab.aTitle + "</h5>" +
-                '<span class="tag">' + x.lab.aTag + "</span>" +
-                '<div class="dots">' + dotsHTML(112) + "</div>" +
-                '<p class="lab-cap">' + x.lab.aDesc + "</p>" +
-              "</div>" +
-              '<div class="lab-mode">' +
-                "<h5>" + x.lab.bTitle + "</h5>" +
-                '<span class="tag tag--loss">' + x.lab.bTag + "</span>" +
-                '<div class="dots">' + dotsHTML(16) + "</div>" +
-                '<p class="lab-cap">' + x.lab.bDesc + "</p>" +
-              "</div>" +
-            "</div>" +
+            '<div class="lab-head"><b>' + x.test1.head + "</b><span>" + x.test1.sub + "</span></div>" +
+            x.test1.rows
+              .map(
+                (r, i) =>
+                  '<div class="run">' +
+                    '<div class="run-info">' +
+                      "<h5>" + r.title + "</h5>" +
+                      '<p class="run-sub">' + r.sub + "</p>" +
+                    "</div>" +
+                    '<div class="run-out"><span class="tag ' + (r.tagClass || "") + '">' + r.tag + "</span></div>" +
+                    '<div class="dots" aria-hidden="true">' + weekDotsHTML(cols[i]) + "</div>" +
+                  "</div>"
+              )
+              .join("") +
+            '<p class="lab-cap">' + x.test1.cap + "</p>" +
           "</div>"
         );
+      }
+      case "test2": {
+        const up = [40, 72, 34, 0, 0, 0, 0];
+        const down = [0, 0, 0, 0, 34, 66, 88];
+        const bar = (v, i, zone) => {
+          if (v > 0) return '<span class="wbar" style="--h:' + v + "%;--d:" + i * 70 + 'ms"></span>';
+          if (zone === "up" && down[i] === 0) return '<span class="wbar wbar--zero"></span>';
+          return "";
+        };
+        return (
+          '<div class="lab rv">' +
+            '<div class="lab-head"><b>' + x.test2.head + "</b><span>" + x.test2.sub + "</span></div>" +
+            '<div class="chart" role="img" aria-label="' + x.test2.aria + '">' +
+              '<div class="zone zone--up">' +
+                up.map((v, i) => '<div class="wcol">' + bar(v, i, "up") + "</div>").join("") +
+              "</div>" +
+              '<div class="base"><span class="base-lab">' + x.test2.base + "</span></div>" +
+              '<div class="zone zone--down">' +
+                down.map((v, i) => '<div class="wcol">' + bar(v, i, "down") + "</div>").join("") +
+              "</div>" +
+              '<div class="wdays">' +
+                [1, 2, 3, 4, 5, 6, 7]
+                  .map(
+                    d =>
+                      '<div class="wday"><b>' + d + "</b>" +
+                      '<span class="wmark' + (d === 1 ? " wmark--eat" : "") + '"></span></div>'
+                  )
+                  .join("") +
+              "</div>" +
+              '<div class="phases">' +
+                x.test2.phases
+                  .map((p, i) => '<div class="phase' + (i === 2 ? " phase--below" : "") + '">' + p + "</div>")
+                  .join("") +
+              "</div>" +
+            "</div>" +
+            '<p class="lab-cap">' + x.test2.cap + "</p>" +
+          "</div>"
+        );
+      }
       case "panel":
         return (
           '<div class="tests rv">' +
@@ -381,8 +443,9 @@
           '<div class="sec-body">' +
             (s.lead ? '<p class="lead rv">' + s.lead + "</p>" : "") +
             (s.body ? '<p class="rv">' + s.body + "</p>" : "") +
-            (s.body2 ? '<p class="rv">' + s.body2 + "</p>" : "") +
             (s.extra ? extrasHTML(s.extra, x) : "") +
+            (s.body2 ? '<p class="rv">' + s.body2 + "</p>" : "") +
+            (s.extra2 ? extrasHTML(s.extra2, x) : "") +
           "</div>" +
         "</div>" +
       "</article>"
