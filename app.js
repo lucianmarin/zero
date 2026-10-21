@@ -45,8 +45,27 @@
         top: "Back to top ↑"
       },
       statements: {
-        s1: { num: "01.", text: "Insulin keeps the fat on — no matter what you try." },
-        s3: { num: "02.", text: "The internal clock of the human body is insulin." }
+        s1: {
+          num: "01.",
+          big: "INSULIN.",
+          text: "Insulin keeps the fat on — no matter what you try.",
+          kicker: "METABOLIC LOCK",
+          mark: "FASTING INSULIN · ZERO."
+        },
+        s3: {
+          num: "02.",
+          big: "CLOCK.",
+          text: "The internal clock of the human body is insulin.",
+          kicker: "BIOLOGICAL TIME",
+          mark: "BODY CLOCK · INSULIN."
+        },
+        s7: {
+          num: "03.",
+          big: "TIMING.",
+          text: "No food is bad as long as you know when to eat it.",
+          kicker: "DIET & RHYTHM",
+          mark: "TIME OVER DIET · ZERO."
+        }
       },
       extras: {
         intervals: {
@@ -138,7 +157,7 @@
         {
           id: "s3", n: "03", title: "What about calories and nutrients", punct: "?",
           lead: "",
-          body: "You don't have to worry about this. The human body is a (super)intelligent meat computer. You can eat all your calories at 24h/36h/48h/72h intervals and still lose weight by driving insulin as slow as that in a skinny person. The internal clock of the human body is insulin, not the clock we have on our wrist or phones. The human body doesn't know what time is in the universe, it knows just how much insulin needs to produce to keep you healthy. Because of this you won't lose at nutrients at all, having a higher insulin level will keep your nutrients lock in to keep you healthy. Just think about how humans lived millions of years ago when food was scarce, they got obese in one place then migrated to another place that have abundant food they lost some of their body fat while migrating.",
+          body: "You don't have to worry about this. The human body is a <strong>(<span class=\"punct\">super</span>)intelligent</strong> meat computer. You can eat all your calories at 24h/36h/48h/72h intervals and still lose weight by driving insulin as slow as that in a skinny person. The internal clock of the human body is insulin, not the clock we have on our wrist or phones. The human body doesn't know what time is in the universe, it knows just how much insulin needs to produce to keep you healthy. Because of this you won't lose at nutrients at all, having a higher insulin level will keep your nutrients lock in to keep you healthy. Just think about how humans lived millions of years ago when food was scarce, they got obese in one place then migrated to another place that have abundant food they lost some of their body fat while migrating.",
           extra: "callout"
         },
         {
@@ -228,8 +247,27 @@
         top: "Înapoi sus ↑"
       },
       statements: {
-        s1: { num: "01.", text: "Insulina menține grăsimea în corp — indiferent de ceea ce încerci." },
-        s3: { num: "02.", text: "Ceasul intern al corpului uman este insulina." }
+        s1: {
+          num: "01.",
+          big: "INSULINA.",
+          text: "Insulina menține grăsimea în corp — indiferent de ceea ce încerci.",
+          kicker: "BLOCAJ METABOLIC",
+          mark: "INSULINA A JEUN · ZERO."
+        },
+        s3: {
+          num: "02.",
+          big: "CEASUL.",
+          text: "Ceasul intern al corpului uman este insulina.",
+          kicker: "TIMP BIOLOGIC",
+          mark: "CEASUL INTERN · INSULINA."
+        },
+        s7: {
+          num: "03.",
+          big: "TIMPUL.",
+          text: "Niciun aliment nu este rău, atâta timp cât știi când să-l consumi.",
+          kicker: "DIETĂ ȘI RITM",
+          mark: "TIMPUL PESTE DIETĂ · ZERO."
+        }
       },
       extras: {
         intervals: {
@@ -321,7 +359,7 @@
         {
           id: "s3", n: "03", title: "Dar caloriile și nutrienții", punct: "?",
           lead: "",
-          body: "Nu trebuie să-ți faci griji în privința acestora. Corpul uman este un „computer biologic” (extrem de) inteligent. Poți consuma toate caloriile necesare la intervale de 24, 36, 48 sau 72 de ore și, totuși, să slăbești, menținând nivelul insulinei la valori la fel de scăzute ca în cazul unei persoane slabe. „Ceasul intern” al corpului uman este, de fapt, insulina – nu cel de la încheietură sau de pe telefon. Corpul uman nu știe cât este ceasul în univers; el știe doar câtă insulină trebuie să producă pentru a te menține sănătos. Din acest motiv, nu vei pierde nutrienți; dimpotrivă, un nivel mai ridicat de insulină va reține nutrienții în organism, asigurându-ți starea de sănătate. Gândește-te doar la modul în care trăiau oamenii acum milioane de ani, când hrana era puțină: acumulau grăsime corporală într-o zonă, apoi, în timpul migrației către un loc cu resurse alimentare abundente, pierdeau o parte din acea grăsime.",
+          body: "Nu trebuie să-ți faci griji în privința acestora. Corpul uman este un „computer biologic” <strong>(<span class=\"punct\">super</span>)inteligent</strong>. Poți consuma toate caloriile necesare la intervale de 24, 36, 48 sau 72 de ore și, totuși, să slăbești, menținând nivelul insulinei la valori la fel de scăzute ca în cazul unei persoane slabe. „Ceasul intern” al corpului uman este, de fapt, insulina – nu cel de la încheietură sau de pe telefon. Corpul uman nu știe cât este ceasul în univers; el știe doar câtă insulină trebuie să producă pentru a te menține sănătos. Din acest motiv, nu vei pierde nutrienți; dimpotrivă, un nivel mai ridicat de insulină va reține nutrienții în organism, asigurându-ți starea de sănătate. Gândește-te doar la modul în care trăiau oamenii acum milioane de ani, când hrana era puțină: acumulau grăsime corporală într-o zonă, apoi, în timpul migrației către un loc cu resurse alimentare abundente, pierdeau o parte din acea grăsime.",
           extra: "callout"
         },
         {
@@ -435,21 +473,60 @@
       case "intervals":
         return (
           '<div class="intervals rv">' +
-            '<p class="int-cap">' + x.intervals.cap + "</p>" +
+            '<div class="int-head">' +
+              '<p class="int-cap">' + x.intervals.cap + "</p>" +
+              '<span class="ring-dots" aria-hidden="true"><i></i><i></i><i class="on"></i><i></i></span>' +
+            "</div>" +
             '<div class="intervals-grid">' +
               x.intervals.items
-                .map(([n, l]) => '<div class="int"><b>' + n + "<em>h</em></b><i>" + l + "</i></div>")
+                .map(
+                  ([n, l], idx) => {
+                    const pct = Math.round((Number(n) / 72) * 1000) / 10;
+                    return (
+                      '<div class="int">' +
+                        '<div class="int-top">' +
+                          '<span class="int-idx">0' + (idx + 1) + ".</span>" +
+                          '<span class="int-badge" aria-hidden="true">' + n + "h</span>" +
+                        "</div>" +
+                        "<b>" + n + "<em>h</em></b>" +
+                        "<i>" + l + "</i>" +
+                        '<div class="int-bar" style="--w:' + pct + '%;--d:' + idx * 90 + 'ms" aria-hidden="true"></div>' +
+                      "</div>"
+                    );
+                  }
+                )
                 .join("") +
             "</div>" +
           "</div>"
         );
       case "callout":
-        return '<aside class="callout rv"><p>' + x.callout + "</p></aside>";
+        return (
+          '<aside class="callout rv">' +
+            '<div class="callout-meta">' +
+              '<span class="callout-num">03.</span>' +
+              '<span class="callout-line" aria-hidden="true"></span>' +
+            "</div>" +
+            "<p>" + x.callout + "</p>" +
+            '<div class="callout-foot" aria-hidden="true">' +
+              '<span class="ring-dots"><i></i><i></i><i></i><i class="on"></i></span>' +
+            "</div>" +
+          "</aside>"
+        );
       case "options":
         return (
           '<div class="options rv">' +
           x.options
-            .map(o => '<div class="opt"><p class="opt-label">' + o.label + "</p><p>" + o.text + "</p></div>")
+            .map(
+              (o, idx) =>
+                '<div class="opt">' +
+                  '<div class="opt-top">' +
+                    '<div><span class="opt-num">0' + (idx + 1) + '.</span><p class="opt-label">' + o.label + "</p></div>" +
+                    '<span class="opt-disc" aria-hidden="true">' + (idx === 0 ? "2×" : "1+2") + "</span>" +
+                  "</div>" +
+                  "<p>" + o.text + "</p>" +
+                  '<span class="opt-rule" aria-hidden="true"></span>' +
+                "</div>"
+            )
             .join("") +
           "</div>"
         );
@@ -575,13 +652,32 @@
     }
   }
 
-  function sectionHTML(s, x) {
+  function sectionHTML(s, x, idx, allSections) {
+    const isPeach = s.id === "s3";
+    const isSplit = s.id === "s4" || s.id === "s8";
+    const total = allSections.length;
+    const pct = Math.round(((idx + 1) / total) * 1000) / 10;
+    const nextSec = allSections[(idx + 1) % total];
+    const nextHref = "#" + nextSec.id;
+    const nextNum = nextSec.n + ".";
+    const cls =
+      "sec" +
+      (s.dark ? " sec--dark" : "") +
+      (isPeach ? " sec--peach" : "") +
+      (isSplit ? " sec--split" : "");
     return (
-      '<article class="sec' + (s.dark ? " sec--dark" : "") + '" id="' + s.id + '" data-rail-id="' + s.id + '">' +
-        '<div class="wrap">' +
+      '<article class="' + cls + '" id="' + s.id + '" data-rail-id="' + s.id + '">' +
+        '<div class="wrap sec-grid">' +
           '<header class="sec-head rv">' +
-            '<p class="sec-num">' + s.n + '<span class="punct">.</span></p>' +
+            '<div class="sec-kicker">' +
+              '<p class="sec-num">' + s.n + '<span class="punct">.</span></p>' +
+              '<span class="sec-rule" aria-hidden="true"></span>' +
+            "</div>" +
             '<h2 class="sec-title">' + s.title + '<span class="punct">' + s.punct + "</span></h2>" +
+            '<a class="sec-vprog" href="' + nextHref + '" aria-label="Next section ' + nextNum + '">' +
+              '<i class="sec-vprog-line" style="--p:' + pct + '%" aria-hidden="true"></i>' +
+              '<span class="sec-vprog-next">' + nextNum + "</span>" +
+            "</a>" +
           "</header>" +
           '<div class="sec-body">' +
             (s.lead ? '<p class="lead rv">' + s.lead + "</p>" : "") +
@@ -595,32 +691,124 @@
     );
   }
 
-  function statementHTML(st, id) {
+  function statementHTML(st, id, allIds) {
+    const idx = allIds.indexOf(id);
+    const nextId = allIds[(idx + 1) % allIds.length];
+    const prevId = allIds[(idx - 1 + allIds.length) % allIds.length];
     return (
       '<section class="statement" id="st-' + id + '">' +
-        '<div class="wrap st-inner rv">' +
-          '<p class="st-num">' + st.num + "</p>" +
-          '<h3 class="st-text">' + st.text + "</h3>" +
+        '<span class="st-edge" aria-hidden="true"></span>' +
+        '<div class="wrap st-grid rv">' +
+          '<div class="st-main">' +
+            '<div class="st-top">' +
+              '<p class="st-num">' + st.num + "</p>" +
+              '<span class="st-kicker">' + (st.kicker || "") + "</span>" +
+            "</div>" +
+            '<h3 class="st-big">' + (st.big || "ZERO.") + "</h3>" +
+            '<p class="st-text">' + st.text + "</p>" +
+            '<div class="st-dots">' +
+              allIds
+                .map(
+                  sid =>
+                    '<a href="#st-' + sid + '" class="st-dot' + (sid === id ? " on" : "") + '" aria-label="Statement ' + sid + '"></a>'
+                )
+                .join("") +
+            "</div>" +
+          "</div>" +
+          '<div class="st-visual">' +
+            '<div class="st-compass">' +
+              '<a href="#st-' + prevId + '" class="st-nav-btn" aria-label="Previous orange section">◁</a>' +
+              '<a href="#st-' + nextId + '" class="st-nav-btn" aria-label="Next orange section">▷</a>' +
+            "</div>" +
+            '<div class="st-card" aria-hidden="true">' +
+              '<span class="st-card-num">' + st.num + "</span>" +
+              '<div class="st-card-art">' +
+                '<span class="st-card-circle"></span>' +
+                '<span class="st-card-dot"></span>' +
+              "</div>" +
+              '<span class="st-card-lbl">zero.</span>' +
+            "</div>" +
+            '<a href="#st-' + nextId + '" class="st-arrow" aria-label="Next orange section">' +
+              '<svg viewBox="0 0 64 44" aria-hidden="true"><path d="M4 22h48M36 6l18 16-18 16" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>' +
+            "</a>" +
+          "</div>" +
         "</div>" +
-        '<div class="st-mark" aria-hidden="true">zero.</div>' +
+        '<div class="st-mark" aria-hidden="true">' + (st.mark || "ZERO · INSULIN") + "</div>" +
+        '<div class="wrap st-foot" aria-hidden="true">' +
+          '<span>' + (st.kicker || "INSULIN") + "</span>" +
+          '<span>©2026. ZERO.</span>' +
+          '<span class="st-brand">zer<i></i><b></b></span>' +
+        "</div>" +
       "</section>"
     );
   }
 
   function heroHTML(u) {
+    const badges = ["24h", "10kg", "IR"];
     return (
       '<section class="hero" id="top" data-rail-id="top">' +
-        '<div class="wrap">' +
-          '<p class="hero-eyebrow rv">' + u.hero.eyebrow + "</p>" +
-          '<h1 class="hero-title rv">' + u.hero.title + "</h1>" +
-          '<p class="hero-sub rv">' + u.hero.sub + "</p>" +
-          '<div class="hero-cta rv"><a class="cta" href="#s1">' + u.hero.cta + ' <span class="arr">↓</span></a></div>' +
-          '<div class="hero-stats rv">' +
-            u.hero.stats
-              .map(([v, l]) => '<div class="hstat"><b>' + v + "</b><span>" + l + "</span></div>")
-              .join("") +
+        '<div class="wrap hero-stage">' +
+          '<div class="hero-left">' +
+            '<div class="hero-eyebrow rv">' +
+              '<span>' + u.hero.eyebrow + "</span>" +
+              '<i class="hero-eyebrow-line" aria-hidden="true"></i>' +
+            "</div>" +
+            '<h1 class="hero-title rv">' + u.hero.title + "</h1>" +
+            '<div class="hero-cta rv">' +
+              '<a class="cta" href="#s1">' +
+                '<span>' + u.hero.cta + '</span>' +
+                '<span class="arr" aria-hidden="true">↓</span>' +
+              "</a>" +
+              '<div class="hero-jump" aria-hidden="true">' +
+                '<a href="#s2" class="hero-icon-btn" tabindex="-1" title="Method">' +
+                  '<svg viewBox="0 0 18 18" width="15" height="15"><circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="9" r="2" fill="currentColor"/></svg>' +
+                "</a>" +
+                '<a href="#s11" class="hero-icon-btn" tabindex="-1" title="Share &amp; Donate">' +
+                  '<svg viewBox="0 0 18 18" width="15" height="15"><circle cx="5" cy="9" r="2" fill="currentColor"/><circle cx="13" cy="5" r="2" fill="currentColor"/><circle cx="13" cy="13" r="2" fill="currentColor"/><path d="M6.8 8L11.2 5.8M6.8 10L11.2 12.2" stroke="currentColor" stroke-width="1.5"/></svg>' +
+                "</a>" +
+              "</div>" +
+            "</div>" +
           "</div>" +
-          '<div class="hero-deco" aria-hidden="true"></div>' +
+          '<div class="hero-collage rv">' +
+            '<div class="hero-art" aria-hidden="true">' +
+              '<div class="hero-art-inner">' +
+                '<div class="hero-art-top">' +
+                  '<span>00.</span>' +
+                  '<span>HOMA-IR → 2–4</span>' +
+                "</div>" +
+                '<div class="hero-art-rings">' +
+                  '<span class="har-1"></span>' +
+                  '<span class="har-2"></span>' +
+                  '<span class="har-core"></span>' +
+                  '<span class="har-dot"></span>' +
+                "</div>" +
+                '<div class="hero-art-vdots">' +
+                  '<span></span><span></span><span class="on"></span><span></span>' +
+                "</div>" +
+              "</div>" +
+            "</div>" +
+            '<div class="hero-orange">' +
+              '<p class="hero-sub">' + u.hero.sub + "</p>" +
+            "</div>" +
+            '<div class="hero-dark">' +
+              u.hero.stats
+                .map(
+                  ([v, l], i) =>
+                    '<div class="hstat">' +
+                      '<div class="hstat-txt">' +
+                        '<span class="hstat-num">0' + (i + 1) + ".</span>" +
+                        "<b>" + v + "</b>" +
+                        "<span>" + l + "</span>" +
+                      "</div>" +
+                      '<div class="hstat-orb" aria-hidden="true"><span>' + badges[i] + "</span></div>" +
+                    "</div>"
+                )
+                .join('<div class="hstat-rule" aria-hidden="true"></div>') +
+            "</div>" +
+          "</div>" +
+          '<div class="hero-vprog" aria-hidden="true">' +
+            '<span>01.</span><i class="hero-vprog-bar"></i><span>11.</span>' +
+          "</div>" +
           '<div class="hero-mark" aria-hidden="true">zero.</div>' +
           '<div class="hero-cue" aria-hidden="true"><span>' + u.hero.cue + "</span><span></span></div>" +
         "</div>" +
@@ -633,11 +821,12 @@
      ---------------------------------------------------------- */
   function renderMain(d) {
     const u = d.ui;
+    const stIds = Object.keys(u.statements);
     let html = heroHTML(u);
-    u.sections.forEach(s => {
-      html += sectionHTML(s, u.extras);
+    u.sections.forEach((s, idx) => {
+      html += sectionHTML(s, u.extras, idx, u.sections);
       if (u.statements[s.id]) {
-        html += statementHTML(u.statements[s.id], s.id);
+        html += statementHTML(u.statements[s.id], s.id, stIds);
       }
     });
     app.innerHTML = html;
@@ -698,6 +887,7 @@
           if (!dot) return;
           dots.forEach(d => d.classList.remove("on"));
           dot.classList.add("on");
+          activeRailId = e.target.dataset.railId;
         });
       },
       { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
@@ -724,7 +914,13 @@
 
     $$("[data-i18n]").forEach(el => {
       const v = get(d.ui, el.dataset.i18n);
-      if (v !== undefined) el.textContent = v;
+      if (v !== undefined) {
+        if (el.dataset.i18n.startsWith("nav.")) {
+          el.innerHTML = '<span class="nav-hi">' + v.slice(0, 3) + "</span>" + v.slice(3);
+        } else {
+          el.textContent = v;
+        }
+      }
     });
 
     renderMain(d);
@@ -787,13 +983,48 @@
   });
 
   /* ----------------------------------------------------------
-     Scroll behaviour
+     Scroll behaviour & Prev/Next section controls
      ---------------------------------------------------------- */
+  let activeRailId = "top";
+
+  rail.addEventListener("click", e => {
+    const dot = e.target.closest("span[data-rail-for]");
+    if (!dot) return;
+    const id = dot.dataset.railFor;
+    const target = id === "top" ? document.body : document.getElementById(id);
+    if (target) {
+      const y = id === "top" ? 0 : target.getBoundingClientRect().top + window.scrollY - 76;
+      window.scrollTo({ top: y, behavior: RM ? "auto" : "smooth" });
+    }
+  });
+
+  function stepSection(dir) {
+    const ids = ["top", ...DATA[lang].ui.sections.map(s => s.id)];
+    const curIdx = Math.max(0, ids.indexOf(activeRailId));
+    const nextIdx = Math.min(ids.length - 1, Math.max(0, curIdx + dir));
+    const nextId = ids[nextIdx];
+    activeRailId = nextId;
+    if (nextId === "top") {
+      window.scrollTo({ top: 0, behavior: RM ? "auto" : "smooth" });
+      return;
+    }
+    const el = document.getElementById(nextId);
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 76;
+      window.scrollTo({ top: y, behavior: RM ? "auto" : "smooth" });
+    }
+  }
+
+  const prevBtn = $("#prevSec");
+  const nextBtn = $("#nextSec");
+  if (prevBtn) prevBtn.addEventListener("click", () => stepSection(-1));
+  if (nextBtn) nextBtn.addEventListener("click", () => stepSection(1));
+
   const onScroll = () => hdr.classList.toggle("scrolled", window.scrollY > 10);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  $$("#brandLink, #toTop").forEach(a =>
+  $$("#brandLink, #toTop, .brand--foot").forEach(a =>
     a.addEventListener("click", e => {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: RM ? "auto" : "smooth" });

@@ -8,10 +8,10 @@
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101010">
 <title>Zero. Weight loss with insulin.</title>
 <meta name="description" content="Zero — weight loss with insulin. How fasting insulin drives obesity, and how longer eating intervals (24–72h) reverse it. Blood tests to confirm and monitor.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cstyle%3Ecircle.ink{fill:%23111110}@media(prefers-color-scheme:dark){circle.ink{fill:%23F1F0ED}}%3C/style%3E%3Ccircle class='ink' cx='23' cy='32' r='17'/%3E%3Ccircle cx='52' cy='32' r='7' fill='%23FF4A00'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cstyle%3Ecircle.ink{fill:%23111110}@media(prefers-color-scheme:dark){circle.ink{fill:%23F1F0ED}}%3C/style%3E%3Ccircle class='ink' cx='24' cy='32' r='18'/%3E%3Ccircle cx='52' cy='44' r='6' fill='%23E62B1E'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,12 +19,12 @@
 <header class="hdr" id="hdr">
   <div class="wrap hdr-in">
     <a class="brand" href="#top" id="brandLink" aria-label="Zero">
-      <span>zer</span><span class="brand-o" aria-hidden="true"></span><span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-txt">zer</span><span class="brand-o" aria-hidden="true"></span><span class="brand-dot" aria-hidden="true"></span>
     </a>
     <nav class="hdr-nav" aria-label="Sections">
-      <a href="#s2" data-i18n="nav.method">Method</a>
-      <a href="#s6" data-i18n="nav.experiment">Experiment</a>
-      <a href="#s10" data-i18n="nav.tests">Blood tests</a>
+      <a href="#s2" data-i18n="nav.method"><span class="nav-hi">Met</span>hod</a>
+      <a href="#s6" data-i18n="nav.experiment"><span class="nav-hi">Exp</span>eriment</a>
+      <a href="#s10" data-i18n="nav.tests"><span class="nav-hi">Blo</span>od tests</a>
     </nav>
     <div class="hdr-right">
       <div class="lang" role="group" aria-label="Language / Limbă">
@@ -51,14 +51,30 @@
 
 <aside class="rail" id="rail" aria-hidden="true"></aside>
 
+<div class="vnav" id="vnav" aria-label="Section navigation">
+  <span class="vnav-lbl" aria-hidden="true"><b>ne</b><i>xt.</i></span>
+  <button class="vnav-btn vnav-btn--prev" id="prevSec" type="button" aria-label="Previous section">
+    <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3.5 10L8 5.5 12.5 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="vnav-btn vnav-btn--next" id="nextSec" type="button" aria-label="Next section">
+    <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3.5 6L8 10.5 12.5 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
 <main id="app"></main>
 
 <footer class="foot" id="foot">
   <div class="wrap foot-in">
-    <p class="foot-tag" data-i18n="foot.tag">The body's clock is insulin.</p>
+    <div class="foot-col">
+      <span class="foot-kicker">00.</span>
+      <p class="foot-tag" data-i18n="foot.tag">The body's clock is insulin.</p>
+    </div>
     <div class="foot-row">
       <p class="foot-copy" data-i18n="foot.copy">©2026. Zero.</p>
       <a class="foot-top" href="#top" id="toTop" data-i18n="foot.top">Back to top ↑</a>
+      <a class="brand brand--foot" href="#top" aria-label="Zero">
+        <span class="brand-txt">zer</span><span class="brand-o" aria-hidden="true"></span><span class="brand-dot" aria-hidden="true"></span>
+      </a>
     </div>
   </div>
   <div class="foot-mark" aria-hidden="true">zero.</div>
