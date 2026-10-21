@@ -585,10 +585,10 @@ img,svg{display:block;max-width:100%}
 /* Concentric metabolic ring art inside hero-art */
 .hero-art-rings{
   position:absolute;
-  left:28%;
-  top:52%;
+  left:23%;
+  top:45%;
   transform:translate(-50%, -50%);
-  width:clamp(180px, 22vw, 300px);
+  width:clamp(168px, 19vw, 248px);
   aspect-ratio:1;
   pointer-events:none;
 }
@@ -598,10 +598,14 @@ img,svg{display:block;max-width:100%}
   inset:0;
   border-radius:50%;
   border:1px solid rgba(245,244,241,.16);
+  transform:rotate(-45deg);
+  animation:harOrbit1 28s linear infinite;
 }
 .har-2{
   inset:18%;
   border-color:rgba(245,244,241,.28);
+  transform:rotate(135deg);
+  animation:harOrbit2 16s linear infinite;
 }
 .har-core{
   position:absolute;
@@ -612,31 +616,62 @@ img,svg{display:block;max-width:100%}
 }
 .har-dot{
   position:absolute;
-  right:24%;
-  bottom:26%;
+  left:50%;
+  top:-0.5px;
+  transform:translate(-50%, -50%);
   width:18px;height:18px;
   border-radius:50%;
   background:var(--accent);
   box-shadow:0 0 24px rgba(255,85,0,.65);
 }
+.har-dot--white{
+  background:#F5F4F1;
+  box-shadow:0 0 20px rgba(245,244,241,.5);
+}
+@keyframes harOrbit1{
+  from{transform:rotate(-45deg)}
+  to{transform:rotate(315deg)}
+}
+@keyframes harOrbit2{
+  from{transform:rotate(135deg)}
+  to{transform:rotate(495deg)}
+}
 
-/* Vertical hollow ring dots on the seam (from design-inspiration-01) */
-.hero-art-vdots{
-  position:absolute;
-  left:44%;
-  bottom:26px;
+.hero-art-legend{
+  position:relative;
+  z-index:2;
+  margin-top:auto;
+  margin-bottom:54px;
+  max-width:44%;
   display:flex;
-  flex-direction:column;
-  gap:16px;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px 18px;
+  font-size:.66rem;
+  font-weight:700;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:rgba(245,244,241,.76);
 }
-.hero-art-vdots span{
-  width:7px;height:7px;
+.har-leg-item{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap;
+}
+.har-leg-dot{
+  display:inline-block;
+  width:8px;height:8px;
   border-radius:50%;
-  border:1.5px solid rgba(255,255,255,.65);
+  flex:none;
 }
-.hero-art-vdots span.on{
+.har-leg-dot--white{
+  background:#F5F4F1;
+  box-shadow:0 0 8px rgba(245,244,241,.5);
+}
+.har-leg-dot--orange{
   background:var(--accent);
-  border-color:var(--accent);
+  box-shadow:0 0 10px rgba(255,85,0,.65);
 }
 
 /* Solid Orange Architectural Block (bottom-left of collage, design-inspiration-01) */
@@ -1778,7 +1813,9 @@ img,svg{display:block;max-width:100%}
     grid-template-rows:auto auto auto;
     min-height:0;
   }
-  .hero-art{grid-column:1;grid-row:1;min-height:220px}
+  .hero-art{grid-column:1;grid-row:1;min-height:280px}
+  .hero-art-rings{left:50%;top:48%}
+  .hero-art-legend{margin-bottom:0;max-width:100%}
   .hero-orange{grid-column:1;grid-row:2;margin-top:0;min-height:0}
   .hero-dark{grid-column:1;grid-row:3;margin-top:0}
   .intervals-grid{grid-template-columns:repeat(2, minmax(0, 1fr))}
@@ -1814,5 +1851,7 @@ img,svg{display:block;max-width:100%}
   .intervals.in .int-bar::after{transform:none;transition:none}
   .spike .curve,
   .lab.in .spike .curve{stroke-dashoffset:0;transition:none}
-  .donate-dot{animation:none}
+  .donate-dot,
+  .har-1,
+  .har-2{animation:none}
 }

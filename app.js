@@ -33,6 +33,10 @@
         sub: "Your fasting insulin decides whether fat comes off or stays on. Eat to your insulin level — not to the clock.",
         cta: "Start — how obesity happens",
         cue: "scroll",
+        legend: {
+          white: "Normal time",
+          orange: "Insulin time"
+        },
         stats: [
           ["24–72h", "Eating intervals, adjusted to hunger"],
           ["10 kg", "Blood-test checkpoints while losing"],
@@ -235,6 +239,10 @@
         sub: "Insulina pe nemâncate decide dacă grăsimea se topește sau rămâne. Mănâncă după nivelul insulinei — nu după ceas.",
         cta: "Începe — cum apare obezitatea",
         cue: "derulează",
+        legend: {
+          white: "Timpul normal",
+          orange: "Timpul insulinei"
+        },
         stats: [
           ["24–72h", "Intervale de masă, ajustate după foame"],
           ["10 kg", "Praguri de analize în timpul slăbirii"],
@@ -777,13 +785,13 @@
                   '<span>HOMA-IR → 2–4</span>' +
                 "</div>" +
                 '<div class="hero-art-rings">' +
-                  '<span class="har-1"></span>' +
-                  '<span class="har-2"></span>' +
+                  '<span class="har-1"><span class="har-dot har-dot--white"></span></span>' +
+                  '<span class="har-2"><span class="har-dot"></span></span>' +
                   '<span class="har-core"></span>' +
-                  '<span class="har-dot"></span>' +
                 "</div>" +
-                '<div class="hero-art-vdots">' +
-                  '<span></span><span></span><span class="on"></span><span></span>' +
+                '<div class="hero-art-legend">' +
+                  '<span class="har-leg-item"><i class="har-leg-dot har-leg-dot--white"></i><span>' + u.hero.legend.white + "</span></span>" +
+                  '<span class="har-leg-item"><i class="har-leg-dot har-leg-dot--orange"></i><span>' + u.hero.legend.orange + "</span></span>" +
                 "</div>" +
               "</div>" +
             "</div>" +
