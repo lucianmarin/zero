@@ -1,5 +1,5 @@
 # Zero
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.jpg)
 
 Weight loss with insulin.
