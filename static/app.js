@@ -15,7 +15,7 @@
      ---------------------------------------------------------- */
   const EN = {
     meta: {
-      title: "Zero. Weight loss with insulin.",
+      title: "Zero",
       desc: "Zero — weight loss with insulin. How fasting insulin drives obesity, and how longer eating intervals (24–72h) reverse it. Blood tests to confirm and monitor."
     },
     ui: {
@@ -221,7 +221,7 @@
      ---------------------------------------------------------- */
   const RO = {
     meta: {
-      title: "Zero. Scădere în greutate și insulina.",
+      title: "Zero",
       desc: "Zero — scădere în greutate cu insulina. Cum insulina a jeun întreține obezitatea și cum intervalele de masă de 24–72h o inversează. Analize de sânge pentru confirmare și monitorizare."
     },
     ui: {
