@@ -10,6 +10,22 @@
      vertical progress counters, and circular prev/next controls
    ============================================================ */
 
+@font-face{
+  font-family:"Route 159";
+  src:url("/static/route159/regular.woff2") format("woff2");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face{
+  font-family:"Route 159";
+  src:url("/static/route159/bold.woff2") format("woff2");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+
 :root{
   color-scheme:light dark;
 
@@ -92,7 +108,7 @@ body{
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family:"Route 159","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:16px;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;

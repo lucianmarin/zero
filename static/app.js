@@ -827,6 +827,12 @@
   /* ----------------------------------------------------------
      Render
      ---------------------------------------------------------- */
+  const DIACRITICS = { "ș": "ş", "Ș": "Ş", "ț": "ţ", "Ț": "Ţ" };
+
+  function replaceDiacritics(str) {
+    return String(str).replace(/[șȘțȚ]/g, c => DIACRITICS[c]);
+  }
+
   function renderMain(d) {
     const u = d.ui;
     const stIds = Object.keys(u.statements);
@@ -837,20 +843,22 @@
         html += statementHTML(u.statements[s.id], s.id, stIds);
       }
     });
-    app.innerHTML = html;
+    app.innerHTML = replaceDiacritics(html);
   }
 
   function buildMenu(d) {
     const u = d.ui;
-    menuList.innerHTML = u.sections
-      .map(
-        (s, i) =>
-          '<li style="--d:' + i * 45 + 'ms"><a href="#' + s.id + '">' +
-          '<span class="mi-n">' + s.n + ".</span>" +
-          "<span>" + s.title + s.punct + "</span>" +
-          "</a></li>"
-      )
-      .join("");
+    menuList.innerHTML = replaceDiacritics(
+      u.sections
+        .map(
+          (s, i) =>
+            '<li style="--d:' + i * 45 + 'ms"><a href="#' + s.id + '">' +
+            '<span class="mi-n">' + s.n + ".</span>" +
+            "<span>" + s.title + s.punct + "</span>" +
+            "</a></li>"
+        )
+        .join("")
+    );
   }
 
   function buildRail(d) {
@@ -921,8 +929,9 @@
     if (md) md.setAttribute("content", d.meta.desc);
 
     $$("[data-i18n]").forEach(el => {
-      const v = get(d.ui, el.dataset.i18n);
-      if (v !== undefined) {
+      const raw = get(d.ui, el.dataset.i18n);
+      if (raw !== undefined) {
+        const v = replaceDiacritics(raw);
         if (el.dataset.i18n.startsWith("nav.")) {
           el.innerHTML = '<span class="nav-hi">' + v.slice(0, 3) + "</span>" + v.slice(3);
         } else {
