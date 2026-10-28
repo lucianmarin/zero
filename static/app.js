@@ -81,7 +81,7 @@
             ["72", "Fast melt — not for everyone"]
           ]
         },
-        callout: "A higher insulin level keeps your nutrients locked in — to keep you healthy.",
+        callout: "A higher insulin level keeps nutrients locked in storage to keep you healthy.",
         options: [
           { label: "Option A", text: "Two meals a day. Zero calories in between." },
           { label: "Option B", text: "Modified three meals — one big meal, two snacks." }
@@ -110,18 +110,18 @@
           rows: [
             {
               title: "Type 1 — Vegetables",
-              sub: "Cooked or uncooked, in any combination with salt, spices, brine and vinegar. You can even enjoy them when you are hungry, during the fasting window.",
+              sub: "Cooked or uncooked, in any combination with salt, spices, brine and vinegar. You can even enjoy them while hungry, inside your fasting window.",
               tag: "Low"
             },
             {
               title: "Type 2 — Fiber, protein, fat",
-              sub: "Foods containing fiber, protein and healthy fats, combined in delicious meals. These are the foods that keep you healthy, don't cause weight gain and prevent diabetes.",
+              sub: "Foods containing fiber, protein and healthy fats, combined into delicious meals. These are the foods that keep you healthy, don't cause weight gain and prevent diabetes.",
               tag: "Medium",
               tagClass: "tag--hold"
             },
             {
               title: "Type 3 — Sugar & white flour",
-              sub: "Sugar and white flour in highly processed foods, fruit juices and even homemade jams, if eaten in large portions. You don't need to avoid them completely — enjoy them on special occasions: holidays, birthdays, special events. Or set a rhythm, like your favorite ice cream once every two weeks.",
+              sub: "Sugar and white flour in highly processed foods, fruit juices and even homemade jams — if eaten in large portions. You don't need to avoid them completely; just enjoy them on special occasions like holidays, birthdays and events, or set a rhythm for them — say, enjoying your favorite ice cream once every two weeks.",
               tag: "Huge",
               tagClass: "tag--loss"
             }
@@ -135,7 +135,7 @@
             ["ALT & AST", "liver health"],
             ["ApoB", "heart health"],
             ["eGFR", "kidney health"],
-            ["hsCRP", "whole-body inflammation"]
+            ["hsCRP", "overall inflammation"]
           ],
           foot: "Every 10 kg step → better results."
         },
@@ -148,68 +148,68 @@
       },
       sections: [
         {
-          id: "s1", n: "01", title: "How a normal person becomes obese", punct: "?",
-          lead: "The biology is simple. Every extra kg of body fat raises fasting blood insulin.",
-          body: "When insulin is getting higher with every extra kg of body fat, eating every time you are hungry or eating 3 meals a day will make you gaining more and more weight. The weight progression is logarithmic. The fasting insulin gets higher and higher without the person knowing what happens in their body... until they blood test the fasting insulin level. Then they will convince themselves that insulin keeps the fat on the body no matter what they are trying to do: caloric deficit, exercise, diets, supplements, meds, eating less, eating healthier, building tons of muscles for no reason at all, etc."
+          id: "s1", n: "01", title: "How does a normal person become obese", punct: "?",
+          lead: "The biology is simple. Every extra kilogram of body fat raises fasting blood insulin.",
+          body: "As insulin climbs higher with every extra kilogram, eating every time you are hungry — or eating three meals a day — makes you gain more and more weight. The weight progression is logarithmic. Fasting insulin keeps rising without the person knowing what is happening inside their body… until a blood test reveals their fasting insulin level. Then they will convince themselves that insulin keeps the fat on their body no matter what they try: caloric deficit, exercise, diets, supplements, meds, eating less, eating healthier, building tons of muscle for no reason at all, and so on."
         },
         {
-          id: "s2", n: "02", title: "How to drive obesity in reverse as fast as becoming one", punct: ".",
+          id: "s2", n: "02", title: "How do you reverse obesity as fast as it developed", punct: "?",
           lead: "",
-          body: "Since your fasting insulin is not like a normal person fasting insulin, you can't eat any longer like a normal person. So instead of 2 or 3 meals a day, you adjust your eating schedule to your insulin level by eating every 24h/36h/48h/72h. You need to progressive switch between these intervals as your hunger adjusts. If you eat every 24h your hunger will start from 16h hour until you will be hungry at 24h. When you get to being hungry at exactly 24h hour you switch to 36h or 48h eating schedule. You repeat the process when you get hungry at 48h or if you can't do more than 48h you keep eating at 48h intervals. Eating at 72h intervals for obese persons will just melt fat more faster, but it's not for everyone. When you do this every kg lost will also lower your fasting insulin levels so fat burn will get faster and faster with each repeated 48h-72h eating intervals.",
+          body: "Since your fasting insulin is no longer that of a normal person, you can't keep eating like one. So instead of two or three meals a day, you adjust your eating schedule to your insulin level by eating every 24h, 36h, 48h or 72h. You need to switch between these intervals progressively as your hunger adjusts. If you eat every 24h, hunger will start creeping in around the 16th hour and move later and later until you feel hungry exactly at 24h. When you get hungry at exactly 24h, you switch to a 36h or 48h eating schedule. You repeat the process when you get hungry at 48h — or, if you can't do more than 48h, you keep eating at 48h intervals. For obese persons, eating at 72h intervals melts fat even faster, but it is not for everyone. Each kilogram lost this way also lowers your fasting insulin level, so fat burn gets faster and faster with every repeated 48h–72h eating interval.",
           extra: "intervals"
         },
         {
           id: "s3", n: "03", title: "What about calories and nutrients", punct: "?",
           lead: "",
-          body: "You don't have to worry about this. The human body is a <strong>(<span class=\"punct\">super</span>)intelligent</strong> meat computer. You can eat all your calories at 24h/36h/48h/72h intervals and still lose weight by driving insulin as slow as that in a skinny person. The internal clock of the human body is insulin, not the clock we have on our wrist or phones. The human body doesn't know what time is in the universe, it knows just how much insulin needs to produce to keep you healthy. Because of this you won't lose at nutrients at all, having a higher insulin level will keep your nutrients lock in to keep you healthy. Just think about how humans lived millions of years ago when food was scarce, they got obese in one place then migrated to another place that have abundant food they lost some of their body fat while migrating.",
+          body: "You don't have to worry about this. The human body is a <strong>(<span class=\"punct\">super</span>)intelligent</strong> meat computer. You can eat all your calories at 24h, 36h, 48h or 72h intervals and still lose weight by driving insulin as low as that of a skinny person. The internal clock of the human body is insulin — not the clock on your wrist or your phone. The human body doesn't know what time it is in the universe; it only knows how much insulin it needs to produce to keep you healthy. Because of this, you won't lose out on nutrients at all: a higher insulin level keeps nutrients locked in storage to keep you healthy. Just think about how humans lived millions of years ago when food was scarce — they built up fat in one place, then migrated to a place with abundant food and burned some of that body fat along the way.",
           extra: "callout"
         },
         {
-          id: "s4", n: "04", title: "How you maintain weight loss", punct: ".",
+          id: "s4", n: "04", title: "How do you maintain weight loss", punct: "?",
           lead: "",
-          body: "To maintain the result you have to lose all your fat from your tummy, that's how fasting insulin gets to 2-4 levels like in a normal person. Then you can eat at regular intervals 2 meals a day with zero calories in between or a modified 3 meals a day where you mimicking 1 meal a day by having 1 big meal and 2 snacks for the other meals to keep insulin low.",
+          body: "To maintain the result, you have to lose all the fat from your tummy — that is how fasting insulin gets back down to the 2–4 levels of a normal person. Then you can eat at regular intervals: two meals a day with zero calories in between, or a modified three meals a day where you mimic one meal a day by having one big meal and two snacks, keeping insulin low.",
           extra: "options"
         },
         {
-          id: "s5", n: "05", title: "Blood tests to confirm", punct: ".",
+          id: "s5", n: "05", title: "What blood tests confirm high insulin", punct: "?",
           lead: "",
-          body: "When you do HOMA-IR blood test both glucose and insulin while fasting are tested, but you can also do only fasting insulin blood test. When you convince yourself that your body won't let go of fat no matter what you try is because of high fasting insulin level. To learn more about the biologic process of insulin with science from 2020s-2030s instead of science from 50s-60s, get yourself educated from <strong>Dr Jason Fung</strong> then educate your doctor about how to reverse obesity and be a normal healthy person for the rest of your life."
+          body: "When you do a HOMA-IR blood test, both fasting glucose and fasting insulin are measured — but you can also do a fasting insulin test on its own. When you convince yourself that your body won't let go of fat no matter what you try, the culprit is a high fasting insulin level. To learn more about the biology of insulin from the science of the 2020s–2030s instead of the science of the 1950s–60s, get yourself educated by <strong>Dr. Jason Fung</strong> — then educate your doctor about how to reverse obesity and be a normal, healthy person for the rest of your life."
         },
         {
-          id: "s6", n: "06", title: "How to test the insulin biology", punct: ".",
+          id: "s6", n: "06", title: "How do you test insulin biology", punct: "?",
           lead: "",
-          body: "We can put the theory to the test. Let's say an obese person needs to eat 1600 calories a day — a caloric deficit — compared with the 3200 calories a day needed for maintenance. Suppose they eat 100 calories every hour, plus 8 hours of sleep: over the course of a week, that person would consume half the number of calories needed. Would they lose or gain weight by the end of the week? Each 100 calories would keep insulin elevated until the next hour; they wouldn't lose any weight at all — in fact, they would gain weight depending on their existing body fat (which correlates with fasting insulin levels): those with less body fat would gain less, while those with more will gain more. If they eat all 1600 calories in a single sitting once a day, they would lose weight. If they split it into two meals of 800 calories, they will just maintain their current weight.",
-          body2: "The second test — even AI gets it. Feed someone all the calories they need for a week on the first day of the week, then fast for the next 6 days. In the first 2 days they will gain weight because insulin is high and the glucose needs to be pushed into cells. The next 2 days they will lose the weight gained in the first 2 days. The following 2 days they will lose more weight than the starting weight because of how low the insulin gets. So was there even a caloric deficit to begin with?",
+          body: "We can put the theory to the test. Say an obese person needs to eat 1600 calories per day in a caloric deficit, down from 3200 calories a day for maintenance. Suppose they eat 100 calories every hour, plus 8 hours of sleep. Over the course of a week, such a person would consume only half the calories they need. Would they lose or gain weight by the end of the week? Each 100-calorie dose would keep insulin levels elevated until the next hour, so they wouldn't lose any weight at all — in fact, they would gain weight depending on their existing body fat (which correlates with fasting insulin levels): those with less body fat would gain less, while those with more would gain more. If they ate all 1600 calories in a single sitting once a day, they would lose weight. If they split it into two meals of 800 calories, that would simply maintain their current weight.",
+          body2: "The second test is so simple even AI gets it. Feed someone all the calories they need for a week on the first day, then fast for the next six days. In the first two days they will gain weight, because insulin is high and glucose needs to be pushed into cells. Over the next two days they will lose the weight gained in the first two. In the following two days they will lose even more than their starting weight, because insulin gets so low. So was there even a caloric deficit to begin with?",
           extra: "test1",
           extra2: "test2"
         },
         {
-          id: "s7", n: "07", title: "Optimize insulin spikes with diet", punct: ".",
+          id: "s7", n: "07", title: "How do you optimize insulin spikes with diet", punct: "?",
           lead: "",
-          body: "No food is bad as long as you know when to eat it. Time is more important than diet alone. There are 3 types of foods that cause low insulin spikes, medium insulin spikes and huge insulin spikes:",
+          body: "No food is bad as long as you know when to eat it. Time matters more than diet alone. There are three types of foods, causing low, medium and huge insulin spikes:",
           extra: "spikes"
         },
         {
           id: "s8", n: "08", title: "Is your kid obese", punct: "?",
           lead: "",
-          body: "Tell him not to snack in between meals to keep insulin low from one meal to another. The body will self-adjust to the new eating schedule, and fat will be lost naturally. The process above is only for adults. Just eliminating snacks will reduce the consumption of “type 3” foods — which cause sudden, massive insulin spikes — by 80%."
+          body: "Tell him not to snack in between meals, to keep insulin low from one meal to the next. The body will self-adjust to the new eating schedule and the fat will be lost naturally. The process described above is only for adults. Skipping snacks alone will cut out 80% of the type 3 foods that cause huge insulin spikes."
         },
         {
           id: "s9", n: "09", title: "What about muscle loss", punct: "?",
           lead: "",
-          body: "There's not such thing. Mitochondria in your muscles, organs and brain rebuilds the tissues using your body fat. Why it does that? So you can actually survive and live longer. Scary isn't it? To be an obese person, eating at longer intervals and getting healthier and healthier with every lost kg. Nobody stops you from exercising and building muscle while you lose weight."
+          body: "There is no such thing. The mitochondria in your muscles, organs and brain rebuild tissue using your body fat. Why do they do that? So you can survive and live longer. Scary, isn't it? Even an obese person eating at longer intervals gets healthier and healthier with every kilogram lost. And nobody stops you from exercising and building muscle while you lose weight."
         },
         {
-          id: "s10", n: "10", title: "What blood tests to monitor while losing weight", punct: ".",
+          id: "s10", n: "10", title: "What blood tests should you monitor while losing weight", punct: "?",
           lead: "",
-          body: "I monitored this process with every 10kg of fat loss with these blood tests HOMA-IR and HOMA-B for pancreas health, ALT and AST for liver health, ApoB for heart health, eGFR for kidney health and hsCRP for overall body inflammation. These blood tests improved at every 10kg step. So why worry? Just get healthier and stay that way.",
+          body: "I monitored this process with blood tests at every 10kg of fat loss: HOMA-IR and HOMA-B for pancreas health, ALT and AST for liver health, ApoB for heart health, eGFR for kidney health and hsCRP for overall inflammation. Every single one of these improved at each 10kg step. So why worry? Just get healthier and stay that way.",
           extra: "panel",
           dark: true
         },
         {
           id: "s11", n: "11", title: "Disclaimer and donations", punct: ".",
           lead: "",
-          body: "By modifying your eating habits around insulin and adopting a healthy lifestyle, you can reverse insulin resistance, obesity, prediabetes, type 2 diabetes and acanthosis nigricans. For other medical issues, address your doctor.",
+          body: "By modifying your eating habits around insulin and adopting a healthy lifestyle, you can reverse insulin resistance, obesity, prediabetes, type 2 diabetes and acanthosis nigricans. For other medical issues, see your doctor.",
           extra: "donate"
         }
       ]
@@ -222,20 +222,20 @@
   const RO = {
     meta: {
       title: "Zero",
-      desc: "Zero — scădere în greutate cu insulina. Cum insulina a jeun întreține obezitatea și cum intervalele de masă de 24–72h o inversează. Analize de sânge pentru confirmare și monitorizare."
+      desc: "Zero — scăderea în greutate cu insulină. Cum insulina în repaus alimentar întreține obezitatea și cum intervalele de masă de 24–72h o inversează. Analize de sânge pentru confirmare și monitorizare."
     },
     ui: {
       nav: { method: "Metodă", experiment: "Experiment", tests: "Analize de sânge" },
       menu: {
         eyebrow: "Cuprins",
-        note: "Zero — scădere în greutate și insulina.",
+        note: "Zero — scăderea în greutate cu insulină.",
         right: "Știința anilor 2020 — nu a anilor '50.",
         open: "Meniu",
         close: "Închide meniul"
       },
       hero: {
         eyebrow: "Insulină · Post · Analize de sânge",
-        title: 'Scăderea în greutate<br>și insulina<span class="punct">.</span>',
+        title: 'Scăderea în greutate<br>cu insulină<span class="punct">.</span>',
         sub: "Insulina pe nemâncate decide dacă grăsimea se topește sau rămâne. Mănâncă după nivelul insulinei — nu după ceas.",
         cta: "Începe — cum apare obezitatea",
         cue: "derulează",
@@ -260,7 +260,7 @@
           big: "INSULINA.",
           text: "Insulina menține grăsimea în corp — indiferent de ceea ce încerci.",
           kicker: "BLOCAJ METABOLIC",
-          mark: "INSULINA A JEUN · ZERO."
+          mark: "INSULINA BAZALĂ · ZERO."
         },
         s3: {
           num: "02.",
@@ -272,14 +272,14 @@
         s7: {
           num: "03.",
           big: "TIMPUL.",
-          text: "Niciun aliment nu este rău, atâta timp cât știi când să-l consumi.",
+          text: "Niciun aliment nu este dăunător, atâta timp cât știi când să mănânci.",
           kicker: "DIETĂ ȘI RITM",
           mark: "TIMPUL PESTE DIETĂ · ZERO."
         }
       },
       extras: {
         intervals: {
-          cap: "Intervale progresive — avansezi pe măsură ce foamea se ajustează",
+          cap: "Intervale progresive — avansezi pe măsură ce foamea se adaptează",
           items: [
             ["24", "O masă pe zi"],
             ["36", "Pasul următor"],
@@ -287,9 +287,9 @@
             ["72", "Topire rapidă — nu pentru toți"]
           ]
         },
-        callout: "Un nivel mai ridicat de insulină reține nutrienții în organism — ca să te mențină sănătos.",
+        callout: "Un nivel ridicat al insulinei menține nutrienții blocați în rezerve, asigurându-ți starea de sănătate.",
         options: [
-          { label: "Varianta A", text: "Două mese pe zi. Nicio calorie între ele." },
+          { label: "Varianta A", text: "Două mese pe zi, fără nicio calorie între ele." },
           { label: "Varianta B", text: "Trei mese modificate — o masă copioasă și două gustări." }
         ],
         test1: {
@@ -312,27 +312,27 @@
         },
         spikes: {
           head: "Ghidul dietei",
-          sub: "3 categorii de alimente — 3 creșteri ale insulinei",
+          sub: "3 tipuri de alimente — 3 creșteri ale insulinei",
           rows: [
             {
-              title: "Categoria 1 — Legumele",
-              sub: "Gătite sau crude, în orice combinație, cu sare, condimente, saramură sau oțet. Le poți consuma chiar și atunci când îți este foame, în timpul ferestrei de post.",
-              tag: "Ușoară"
+              title: "Tipul 1 — Legumele",
+              sub: "Gătite sau crude, în orice combinație cu sare, condimente, saramură sau oțet. Le poți consuma chiar și atunci când îți este foame, în intervalul de timp dedicat postului (fără mâncare).",
+              tag: "Mică"
             },
             {
-              title: "Categoria 2 — Fibre, proteine, grăsimi",
-              sub: "Alimente care conțin fibre, proteine și grăsimi sănătoase, combinate în mese delicioase. Acestea sunt alimentele care îți mențin sănătatea, nu duc la creșterea în greutate și previn diabetul.",
-              tag: "Moderată",
+              title: "Tipul 2 — Fibre, proteine, grăsimi",
+              sub: "Alimente care conțin fibre, proteine și grăsimi sănătoase, combinate în mese delicioase. Acestea sunt alimentele care te mențin sănătos, nu duc la creșterea în greutate și previn diabetul.",
+              tag: "Medie",
               tagClass: "tag--hold"
             },
             {
-              title: "Categoria 3 — Zahăr și făină albă",
-              sub: "Zahărul și făina albă din alimentele ultraprocesate, sucurile de fructe și chiar dulcețurile de casă (dacă sunt consumate în porții mari). Nu este nevoie să le elimini complet; bucură-te de ele cu ocazii speciale – sărbători, zile de naștere, evenimente deosebite etc. – sau stabilește-ți un ritm, de exemplu, savurând înghețata preferată o dată la două săptămâni.",
+              title: "Tipul 3 — Zahăr și făină albă",
+              sub: "Zahărul și făina albă din alimentele ultraprocesate, sucurile de fructe și chiar dulcețurile de casă — dacă sunt consumate în porții mari. Nu este nevoie să le elimini complet; bucură-te de ele cu ocazii speciale, cum ar fi sărbători, zile de naștere sau diverse evenimente, ori stabilește o frecvență — de exemplu, savurează înghețata preferată o dată la două săptămâni.",
               tag: "Foarte mare",
               tagClass: "tag--loss"
             }
           ],
-          cap: "Categoria 1 ridică insulina foarte puțin. Categoria 2 o ridică moderat. Categoria 3 o aruncă brusc în sus. Ce mănânci decide cât de sus urcă insulina — când mănânci decide restul."
+          cap: "Tipul 1 ridică insulina foarte puțin. Tipul 2 o ridică moderat. Tipul 3 o aruncă brusc în sus. Ce mănânci decide cât de sus urcă insulina — când mănânci decide restul."
         },
         panel: {
           cap: "Monitorizare — la fiecare 10 kg",
@@ -341,9 +341,9 @@
             ["ALT & AST", "sănătatea ficatului"],
             ["ApoB", "sănătatea inimii"],
             ["eGFR", "sănătatea rinichilor"],
-            ["hsCRP", "inflamația generală a corpului"]
+            ["hsCRP", "nivelul general de inflamație"]
           ],
-          foot: "La fiecare prag de 10 kg → rezultate mai bune."
+          foot: "La fiecare etapă de 10 kg → rezultate mai bune."
         },
         donate: {
           note: "Dacă informațiile de aici ți-au fost utile, distribuie această pagină pe rețelele de socializare.",
@@ -355,67 +355,67 @@
       sections: [
         {
           id: "s1", n: "01", title: "Cum ajunge o persoană obișnuită să fie obeză", punct: "?",
-          lead: "Biologia este simplă. Fiecare kilogram de grăsime corporală în plus crește nivelul insulinei în sânge, în stare de repaus alimentar (pe nemâncate).",
-          body: "Întrucât insulina crește odată cu fiecare kilogram de grăsime în plus, faptul de a mânca ori de câte ori îți este foame – sau de a lua trei mese pe zi – te va face să acumulezi tot mai multă greutate. Evoluția greutății urmează o curbă logaritmică. Nivelul insulinei în repaus alimentar crește tot mai mult, fără ca persoana respectivă să știe ce se întâmplă în corpul său... până în momentul în care își verifică, prin analize de sânge, nivelul insulinei pe nemâncate. Atunci va înțelege că insulina este cea care menține grăsimea în corp, indiferent de eforturile depuse: deficit caloric, exerciții fizice, diete, suplimente, medicamente, reducerea cantității de hrană, o alimentație mai sănătoasă, dezvoltarea unei mase musculare excesive (fără un scop anume) etc."
+          lead: "Biologia este simplă. Fiecare kilogram suplimentar de grăsime corporală crește nivelul insulinei în sânge, în stare de repaus alimentar (pe nemâncate).",
+          body: "Întrucât insulina crește odată cu fiecare kilogram în plus, faptul de a mânca de fiecare dată când îți este foame — sau de a lua trei mese pe zi — te face să acumulezi tot mai multă greutate. Evoluția greutății este logaritmică. Nivelul insulinei în repaus alimentar continuă să crească, fără ca persoana respectivă să știe ce se întâmplă în interiorul corpului său... până când o analiză de sânge îi dezvăluie valoarea insulinei în repaus alimentar. Atunci, acea persoană va înțelege că insulina este cea care menține grăsimea în corp, indiferent de ceea ce încearcă: deficit caloric, exerciții fizice, diete, suplimente, medicamente, reducerea cantității de mâncare, o alimentație mai sănătoasă, dezvoltarea unei mase musculare excesive (fără un motiv anume) și așa mai departe."
         },
         {
-          id: "s2", n: "02", title: "Cum să inversezi obezitatea, la fel de rapid cum ai dobândit-o", punct: ".",
+          id: "s2", n: "02", title: "Cum poți inversa obezitatea, la fel de rapid cum s-a instalat", punct: "?",
           lead: "",
-          body: "Deoarece nivelul tău de insulină în repaus alimentar nu mai este cel al unei persoane sănătoase, nu mai poți mânca la fel ca o astfel de persoană. Așadar, în loc de 2 sau 3 mese pe zi, trebuie să-ți adaptezi programul alimentar în funcție de nivelul insulinei, mâncând o dată la 24, 36, 48 sau 72 de ore. Este necesar să treci progresiv de la un interval la altul, pe măsură ce senzația de foame se ajustează. Dacă mănânci o dată la 24 de ore, foamea va începe să apară în jurul orei 16, până când vei simți nevoia să mănânci exact la 24 de ore. Când ajungi să simți foamea fix la 24 de ore, treci la un program de 36 sau 48 de ore. Repetă procesul atunci când începi să simți foamea la 48 de ore; dacă nu poți depăși acest interval, continuă să mănânci o dată la 48 de ore. Pentru persoanele obeze, mesele la intervale de 72 de ore vor accelera topirea grăsimilor, deși această abordare nu este potrivită pentru toată lumea. Pe măsură ce pierzi în greutate, nivelul insulinei în repaus alimentar va scădea, ceea ce va face ca arderea grăsimilor să devină tot mai rapidă, cu fiecare ciclu de 48–72 de ore.",
+          body: "Deoarece nivelul insulinei tale în repaus alimentar nu mai este cel al unei persoane obișnuite, nu mai poți continua să mănânci ca o astfel de persoană. Așadar, în loc de două sau trei mese pe zi, îți ajustezi programul alimentar în funcție de nivelul insulinei, mâncând o dată la 24, 36, 48 sau 72 de ore. Trebuie să treci progresiv de la un interval la altul, pe măsură ce senzația de foame se adaptează. Dacă mănânci o dată la 24 de ore, foamea va începe să apară în jurul celei de-a 16-a ore, deplasându-se treptat mai târziu, până când vei simți foame exact la împlinirea celor 24 de ore. Când ajungi să simți foame exact la 24 de ore, treci la un program de masă la fiecare 36 sau 48 de ore. Repeți procesul atunci când începi să simți foame la 48 de ore — sau, dacă nu poți depăși pragul de 48 de ore, continui să mănânci la intervale de 48 de ore. Pentru persoanele obeze, mesele la intervale de 72 de ore topesc grăsimea și mai rapid, însă această metodă nu este potrivită pentru toată lumea. Fiecare kilogram pierdut în acest mod scade, de asemenea, nivelul insulinei în repaus alimentar; astfel, arderea grăsimilor devine tot mai accelerată cu fiecare repetare a ciclului de 48–72 de ore între mese.",
           extra: "intervals"
         },
         {
-          id: "s3", n: "03", title: "Dar caloriile și nutrienții", punct: "?",
+          id: "s3", n: "03", title: "Dar ce se întâmplă cu caloriile și nutrienții", punct: "?",
           lead: "",
-          body: "Nu trebuie să-ți faci griji în privința acestora. Corpul uman este un „computer biologic” <strong>(<span class=\"punct\">super</span>)inteligent</strong>. Poți consuma toate caloriile necesare la intervale de 24, 36, 48 sau 72 de ore și, totuși, să slăbești, menținând nivelul insulinei la valori la fel de scăzute ca în cazul unei persoane slabe. „Ceasul intern” al corpului uman este, de fapt, insulina – nu cel de la încheietură sau de pe telefon. Corpul uman nu știe cât este ceasul în univers; el știe doar câtă insulină trebuie să producă pentru a te menține sănătos. Din acest motiv, nu vei pierde nutrienți; dimpotrivă, un nivel mai ridicat de insulină va reține nutrienții în organism, asigurându-ți starea de sănătate. Gândește-te doar la modul în care trăiau oamenii acum milioane de ani, când hrana era puțină: acumulau grăsime corporală într-o zonă, apoi, în timpul migrației către un loc cu resurse alimentare abundente, pierdeau o parte din acea grăsime.",
+          body: "Nu trebuie să-ți faci griji în această privință. Corpul uman este un „computer” biologic <strong>(<span class=\"punct\">super</span>)inteligent</strong>. Poți consuma toate caloriile necesare la intervale de 24, 36, 48 sau 72 de ore și, totuși, să slăbești, reducând nivelul insulinei până la cel al unei persoane slabe. „Ceasul intern” al corpului uman este insulina – nu ceasul de la mână sau cel de pe telefon. Corpul uman nu știe cât este ceasul în univers; el știe doar câtă insulină trebuie să producă pentru a te menține sănătos. Din acest motiv, nu vei duce lipsă de nutrienți: un nivel ridicat al insulinei menține nutrienții blocați în rezerve, asigurându-ți starea de sănătate. Gândește-te doar la modul în care trăiau oamenii acum milioane de ani, când hrana era puțină: aceștia acumulau grăsime, apoi migrau către zone cu hrană din abundență, arzând pe parcurs o parte din acea grăsime corporală.",
           extra: "callout"
         },
         {
-          id: "s4", n: "04", title: "Cum să menții scăderea în greutate", punct: ".",
+          id: "s4", n: "04", title: "Cum menții scăderea în greutate", punct: "?",
           lead: "",
-          body: "Pentru a menține rezultatele, trebuie să elimini toată grăsimea din zona abdominală; astfel, nivelul insulinei „pe nemâncate” (a jeun) va ajunge la valori de 2–4, specifice unei persoane sănătoase. Ulterior, poți adopta un program regulat, cu două mese pe zi – fără nicio calorie consumată între ele – sau o variantă modificată a regimului cu trei mese pe zi, care simulează o singură masă principală (o masă copioasă, urmată de două gustări mici, pentru a menține insulina la un nivel scăzut).",
+          body: "Pentru a menține rezultatul, trebuie să elimini toată grăsimea din zona abdominală – astfel, nivelul insulinei „pe nemâncate” (bazale) revine la valorile de 2–4, specifice unei persoane sănătoase. Ulterior, poți mânca la intervale regulate: două mese pe zi, fără nicio calorie între ele, sau o variantă a regimului cu trei mese pe zi, în care simulezi un regim cu o singură masă principală (o masă copioasă și două gustări), menținând astfel insulina la un nivel scăzut.",
           extra: "options"
         },
         {
-          id: "s5", n: "05", title: "Analize de sânge pentru confirmare", punct: ".",
+          id: "s5", n: "05", title: "Ce analize de sânge confirmă un nivel ridicat al insulinei", punct: "?",
           lead: "",
-          body: "În cadrul testului HOMA-IR, se măsoară atât glicemia, cât și nivelul insulinei pe nemâncate (a jeun); alternativ, poți efectua doar analiza pentru determinarea insulinei a jeun. Dacă ai ajuns la concluzia că organismul tău refuză să elimine grăsimea, indiferent de ce încerci, cauza este un nivel ridicat al insulinei a jeun. Pentru a înțelege mai bine procesele biologice legate de insulină – bazându-te pe descoperiri științifice din anii 2020–2030, nu pe cele din anii '50–'60 – informează-te din lucrările <strong>Dr. Jason Fung</strong>. Apoi, împărtășește aceste cunoștințe medicului tău, explicându-i cum poate fi inversată obezitatea, astfel încât să poți duce o viață sănătoasă și normală, pe termen lung."
+          body: "În cadrul analizei HOMA-IR, se măsoară atât glicemia, cât și insulina, ambele pe nemâncate; poți, de asemenea, să efectuezi doar testul pentru determinarea insulinei bazale (pe nemâncate). Dacă ai ajuns la concluzia că organismul tău refuză să elimine grăsimea, indiferent de metodele încercate, cauza este, cel mai probabil, un nivel ridicat al insulinei bazale. Pentru a afla mai multe despre biologia insulinei, bazându-te pe descoperirile științifice actuale (din anii 2020–2030) și nu pe cele din anii 1950–1960, informează-te din lucrările <strong>Dr. Jason Fung</strong>. Apoi, împărtășește aceste cunoștințe medicului tău pentru a învăța cum să inversezi obezitatea și să devii o persoană sănătoasă, cu o greutate normală, pentru tot restul vieții."
         },
         {
-          id: "s6", n: "06", title: "Cum să testezi biologia insulinei", punct: ".",
+          id: "s6", n: "06", title: "Cum poți evalua biologia insulinei", punct: "?",
           lead: "",
-          body: "Putem pune teoria la încercare. Să presupunem că o persoană obeză are nevoie de un aport de 1600 de calorii pe zi (reprezentând un deficit caloric), față de cele 3200 de calorii necesare pentru menținerea greutății. Să presupunem că această persoană consumă 100 de calorii în fiecare oră, având în plus 8 ore de somn. Pe parcursul unei săptămâni, o persoană obeză ar consuma jumătate din numărul de calorii necesare. Ar slăbi sau s-ar îngrășa această persoană până la sfârșitul săptămânii? Fiecare porție de 100 de calorii ar menține nivelul insulinei ridicat până la ora următoare; persoana respectivă nu ar slăbi deloc – ba chiar s-ar îngrășa, în funcție de cantitatea de grăsime corporală existentă (care corelează cu nivelul insulinei în stare de repaus alimentar): cei cu mai puțină grăsime corporală s-ar îngrășa mai puțin, în timp ce aceia cu mai multă grăsime s-ar îngrășa mai mult. Dacă ar consuma toate cele 1600 de calorii într-o singură masă, o dată pe zi, ar slăbi. Dacă ar împărți cantitatea în două mese a câte 800 de calorii, greutatea s-ar menține la nivelul actual.",
-          body2: "Iată un al doilea test, pe care chiar și inteligența artificială îl înțelege: oferă cuiva, în prima zi a săptămânii, toate caloriile de care are nevoie pentru întreaga săptămână, iar apoi persoana respectivă ține post în următoarele 6 zile. În primele 2 zile, va lua în greutate, deoarece nivelul insulinei este ridicat, iar glucoza trebuie împinsă în interiorul celulelor. În următoarele 2 zile, va pierde greutatea acumulată în primele 2 zile. În următoarele 2 zile, va pierde și mai multă greutate – ajungând sub greutatea inițială – datorită scăderii pronunțate a nivelului de insulină. Așadar, a existat, de fapt, un deficit caloric de la bun început?",
+          body: "Putem pune această teorie la încercare. Să presupunem că o persoană obeză trebuie să consume 1600 de calorii pe zi pentru a crea un deficit caloric, față de cele 3200 de calorii necesare pentru menținerea greutății. Să presupunem că această persoană mănâncă 100 de calorii în fiecare oră, având totodată parte de 8 ore de somn. Pe parcursul unei săptămâni, o astfel de persoană ar consuma doar jumătate din caloriile de care are nevoie. Ar slăbi sau s-ar îngrășa până la sfârșitul săptămânii? Fiecare porție de 100 de calorii ar menține nivelul insulinei ridicat până la ora următoare, astfel încât persoana respectivă nu ar slăbi deloc; din contră, s-ar îngrășa, în funcție de cantitatea de grăsime corporală existentă (care corelează cu nivelul insulinei în stare de repaus alimentar): cei cu mai puțină grăsime corporală s-ar îngrășa mai puțin, în timp ce aceia cu o cantitate mai mare s-ar îngrășa mai mult. Dacă ar consuma toate cele 1600 de calorii într-o singură masă, o dată pe zi, ar slăbi. Dacă ar împărți caloriile în două mese a câte 800 de calorii, greutatea s-ar menține, pur și simplu, la nivelul actual.",
+          body2: "Al doilea test este atât de simplu, încât până și inteligența artificială îl înțelege. Oferă-i cuiva, în prima zi, toate caloriile de care are nevoie pentru o săptămână întreagă, apoi supune-l la post în următoarele șase zile. În primele două zile, persoana va lua în greutate, deoarece nivelul insulinei este ridicat, iar glucoza trebuie împinsă în interiorul celulelor. În următoarele două zile, va pierde greutatea acumulată în primele două. În ultimele două zile, va pierde chiar mai mult decât greutatea inițială, întrucât nivelul insulinei scade foarte mult. Așadar, a existat, de fapt, un deficit caloric de la bun început?",
           extra: "test1",
           extra2: "test2"
         },
         {
-          id: "s7", n: "07", title: "Optimizează creșterile nivelului de insulină prin alimentație", punct: ".",
+          id: "s7", n: "07", title: "Cum poți optimiza creșterile bruște ale insulinei prin dietă", punct: "?",
           lead: "",
-          body: "Niciun aliment nu este „rău”, atâta timp cât știi când să-l consumi. Momentul consumului este mai important decât dieta în sine. Există trei categorii de alimente, în funcție de impactul lor asupra nivelului de insulină: cele care provoacă creșteri ușoare, moderate sau foarte mari.",
+          body: "Niciun aliment nu este dăunător, atâta timp cât știi când să mănânci. Contează mai mult momentul în care mănânci decât dieta în sine. Există trei tipuri de alimente, care provoacă creșteri mici, medii sau foarte mari ale nivelului de insulină:",
           extra: "spikes"
         },
         {
-          id: "s8", n: "08", title: "Copilul tău este obez", punct: "?",
+          id: "s8", n: "08", title: "Copilul tău suferă de obezitate", punct: "?",
           lead: "",
-          body: "Spune-i să nu mai mănânce gustări între mese, pentru a menține un nivel scăzut al insulinei de la o masă la alta. Corpul se va adapta de la sine la noul program de masă, iar pierderea în greutate (din grăsimi) va avea loc în mod natural. Procesul descris mai sus este destinat exclusiv adulților. Doar eliminarea gustărilor va reduce cu 80% consumul de alimente de „tip 3”, care provoacă creșteri bruște și masive ale nivelului de insulină."
+          body: "Spune-i să nu mai mănânce gustări între mese, pentru a menține nivelul insulinei scăzut de la o masă la alta. Corpul se va adapta singur la noul program alimentar, iar grăsimea se va pierde în mod natural. Procesul descris mai sus este valabil doar pentru adulți. Simplul fapt de a renunța la gustări elimină 80% din alimentele de tip 3, cele care provoacă creșteri masive ale insulinei."
         },
         {
           id: "s9", n: "09", title: "Dar pierderea masei musculare", punct: "?",
           lead: "",
-          body: "Așa ceva nu există. Mitocondriile din mușchi, organe și creier reconstruiesc țesuturile folosind grăsimea corporală. De ce fac asta? Pentru ca tu să poți supraviețui și să trăiești mai mult. Înfricoșător, nu-i așa? Să fii o persoană obeză, să mănânci la intervale mai mari de timp și să devii tot mai sănătos cu fiecare kilogram pierdut. Nimeni nu te împiedică să faci mișcare și să-ți dezvolți masa musculară în timp ce slăbești."
+          body: "Nu există așa ceva. Mitocondriile din mușchi, organe și creier reconstruiesc țesuturile folosind grăsimea corporală. De ce fac asta? Pentru a te ajuta să supraviețuiești și să trăiești mai mult. Sună înfricoșător, nu-i așa? Chiar și o persoană obeză, care mănâncă la intervale mai mari de timp, devine tot mai sănătoasă cu fiecare kilogram pierdut. În plus, nimic nu te împiedică să faci mișcare și să-ți dezvolți masa musculară în timp ce slăbești."
         },
         {
-          id: "s10", n: "10", title: "Ce analize de sânge să monitorizezi în timpul scăderii în greutate", punct: ".",
+          id: "s10", n: "10", title: "Ce analize de sânge ar trebui să urmărești în timpul procesului de slăbire", punct: "?",
           lead: "",
-          body: "Am monitorizat acest proces la fiecare 10 kg de grăsime pierdute, folosind următoarele analize de sânge: HOMA-IR și HOMA-B pentru sănătatea pancreasului, ALT și AST pentru sănătatea ficatului, ApoB pentru sănătatea inimii, eGFR pentru sănătatea rinichilor și hsCRP pentru inflamația generală a corpului. Rezultatele acestor analize s-au îmbunătățit la fiecare prag de 10 kg. Așadar, de ce să-ți faci griji? Pur și simplu devino mai sănătos și menține-te așa.",
+          body: "Eu am monitorizat acest proces prin analize de sânge efectuate la fiecare 10 kg de grăsime pierdute: HOMA-IR și HOMA-B (pentru sănătatea pancreasului), ALT și AST (pentru sănătatea ficatului), ApoB (pentru sănătatea inimii), eGFR (pentru sănătatea rinichilor) și hsCRP (pentru nivelul general de inflamație). Fiecare dintre acești indicatori s-a îmbunătățit la fiecare etapă de 10 kg. Așadar, de ce să-ți faci griji? Pur și simplu devino mai sănătos și menține-te așa.",
           extra: "panel",
           dark: true
         },
         {
           id: "s11", n: "11", title: "Declinarea responsabilității și donații", punct: ".",
           lead: "",
-          body: "Prin ajustarea obiceiurilor alimentare în funcție de insulină și adoptarea unui stil de viață sănătos, poți inversa rezistența la insulină, obezitatea, prediabetul, diabetul de tip 2 și acanthosis nigricans. Pentru alte probleme medicale, adresează-te medicului tău.",
+          body: "Prin modificarea obiceiurilor alimentare în raport cu insulina și adoptarea unui stil de viață sănătos, poți inversa rezistența la insulină, obezitatea, prediabetul, diabetul de tip 2 și acanthosis nigricans. Pentru alte probleme medicale, consultă medicul.",
           extra: "donate"
         }
       ]
