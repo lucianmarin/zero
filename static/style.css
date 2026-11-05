@@ -48,9 +48,8 @@
   --invert-ink:var(--ink);
   --invert-sub:var(--body);
 
-  /* Accent & brand dot — fixed in both themes */
-  --accent:#FF5500;
-  --logo-dot:#E62B1E;
+  /* Accent — fixed in both themes */
+  --accent:#F2400F;
   --accent-ink:#FFF8F4;
   --on-accent:#FFFFFF;
 
@@ -186,7 +185,7 @@ img,svg{display:block;max-width:100%}
   width:.22em;
   height:.22em;
   border-radius:50%;
-  background:var(--logo-dot);
+  background:var(--accent);
   margin-left:.08em;
 }
 .brand--foot{
@@ -573,7 +572,7 @@ img,svg{display:block;max-width:100%}
   position:relative;
   overflow:hidden;
   background:
-    radial-gradient(circle at 38% 42%, rgba(255,85,0,.22), transparent 52%),
+    radial-gradient(circle at 38% 42%, rgba(242,64,15,.22), transparent 52%),
     radial-gradient(circle at 70% 28%, rgba(255,255,255,.12), transparent 45%),
     linear-gradient(145deg, #2B2624 0%, #161413 60%, #0E0D0D 100%);
   color:#F5F4F1;
@@ -638,7 +637,7 @@ img,svg{display:block;max-width:100%}
   width:18px;height:18px;
   border-radius:50%;
   background:var(--accent);
-  box-shadow:0 0 24px rgba(255,85,0,.65);
+  box-shadow:0 0 24px rgba(242,64,15,.65);
 }
 .har-dot--white{
   background:#F5F4F1;
@@ -687,7 +686,7 @@ img,svg{display:block;max-width:100%}
 }
 .har-leg-dot--orange{
   background:var(--accent);
-  box-shadow:0 0 10px rgba(255,85,0,.65);
+  box-shadow:0 0 10px rgba(242,64,15,.65);
 }
 
 /* Solid Orange Architectural Block (bottom-left of collage, design-inspiration-01) */
@@ -1653,7 +1652,7 @@ img,svg{display:block;max-width:100%}
 .st-card-dot{
   width:18px;height:18px;
   border-radius:50%;
-  background:var(--logo-dot);
+  background:var(--accent);
 }
 .st-card-lbl{
   font-size:.82rem;
