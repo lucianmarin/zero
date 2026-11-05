@@ -476,6 +476,39 @@
       .join("");
   };
 
+  /* 33×33 PayPal QR matrix from source/paypal-qr.png (row bitmasks in hex). */
+  const QR_ROWS = [
+    "1fc53fe7f", "1054a9c41", "17410795d", "175db255d", "17484ba5d",
+    "105bf8d41", "1fd55557f", "000e21e00", "1f7a993aa", "0ca50f2c7",
+    "0444f440a", "092111e34", "15ddf9398", "091847643", "1847a1502",
+    "128275ca4", "157ffd5b2", "03b9bb24b", "03f5f08ea", "110b62a24",
+    "1de0f0712", "14827734b", "1260694fa", "149177c5c", "11e0f37f9",
+    "001279d1d", "1fd0bc35a", "104025f1f", "1756fc5fa", "175b3bebc",
+    "1754a5e6a", "10546181c", "1fd1dc7ca"
+  ];
+
+  const qrSVG = () => {
+    let d = "";
+    for (let y = 0; y < 33; y++) {
+      const bits = parseInt(QR_ROWS[y], 16).toString(2).padStart(33, "0");
+      let x = 0;
+      while (x < 33) {
+        if (bits[x] === "1") {
+          const s = x;
+          while (x < 33 && bits[x] === "1") x++;
+          d += "M" + s + " " + y + "h" + (x - s) + "v1h-" + (x - s) + "z";
+        } else {
+          x++;
+        }
+      }
+    }
+    return (
+      '<svg class="donate-qr" viewBox="0 0 33 33" shape-rendering="crispEdges" aria-hidden="true">' +
+        '<path d="' + d + '" fill="currentColor"/>' +
+      "</svg>"
+    );
+  };
+
   function extrasHTML(id, x) {
     switch (id) {
       case "intervals":
@@ -651,7 +684,7 @@
                 '<span class="donate-label">' + x.donate.cta + "</span>" +
                 '<span class="donate-sub">' + x.donate.sub + "</span>" +
               "</span>" +
-              '<span class="donate-arr" aria-hidden="true">↗</span>' +
+              qrSVG() +
             "</a>" +
           "</div>"
         );
